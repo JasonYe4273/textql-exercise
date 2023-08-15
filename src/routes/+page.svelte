@@ -1,5 +1,5 @@
 <script>
-	import { parseSQL } from '$lib/util.js'
+	import { parseSQL } from '$lib/util.ts'
 
 	let query = '';
 	let parsed = '';
