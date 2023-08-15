@@ -166,11 +166,21 @@ export function parseSQL(query) {
 			continue
 		}
 		if (t === 'WHERE') {
-			mode = 'conditions'
-			token_types.push({
-				'str': 'WHERE',
-				'type': 'keyword'
-			})
+			// There can only be one WHERE
+			if (where !== -1) {
+				token_types.push({
+					'str': 'WHERE',
+					'type': 'error',
+					'error': "Cannot have more than one WHERE"
+				})
+			} else {
+				where = i
+				mode = 'conditions'
+				token_types.push({
+					'str': 'WHERE',
+					'type': 'keyword'
+				})
+			}
 			continue
 		}
 
@@ -202,8 +212,6 @@ export function parseSQL(query) {
 			})
 			continue
 		}
-
-
 	}
 
 	let parsed = {
