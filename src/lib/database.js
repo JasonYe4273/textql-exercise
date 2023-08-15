@@ -1,5 +1,30 @@
 // Data taken from 17lands, a MtG data tracker.
 // https://www.17lands.com/card_data?expansion=LTR&format=PremierDraft&start=2019-01-01&end=2023-08-15
+export const data_types = {
+    "seen_count": 'number',
+    "avg_seen": 'number',
+    "pick_count": 'number',
+    "avg_pick": 'number',
+    "game_count": 'number',
+    "win_rate": 'number',
+    "sideboard_game_count": 'number',
+    "sideboard_win_rate": 'number',
+    "opening_hand_game_count": 'number',
+    "opening_hand_win_rate": 'number',
+    "drawn_game_count": 'number',
+    "drawn_win_rate": 'number',
+    "ever_drawn_game_count": 'number',
+    "ever_drawn_win_rate": 'number',
+    "never_drawn_game_count": 'number',
+    "never_drawn_win_rate": 'number',
+    "drawn_improvement_win_rate": 'number',
+    "name": 'string',
+    "color": 'string',
+    "rarity": 'string',
+    "url": 'string',
+    "url_back": 'string',
+}
+
 export const database = [{
     "seen_count": 277930,
     "avg_seen": 5.220238909077826,
