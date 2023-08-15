@@ -23,7 +23,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/a/4/a4410076-e1fe-45f3-a0ca-a91ab0133ff4.jpg?1686967642",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 18761,
@@ -48,7 +47,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/9/b/9bae7a4d-9117-43c5-a048-80a0ddadc034.jpg?1686967651",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 70186,
@@ -73,7 +71,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/9/a/9ac68519-ed7f-4f38-9549-c02975f88eed.jpg?1686967660",
     "url_back": "",
-    "types": ["Legendary Creature - Horse"]
 },
 {
     "seen_count": 12828,
@@ -98,7 +95,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/f/6/f6bc3720-2892-4dda-8f30-079a1ac8e1e2.jpg?1686967669",
     "url_back": "",
-    "types": ["Legendary Creature - Human Soldier"]
 },
 {
     "seen_count": 6742,
@@ -123,7 +119,6 @@ export const database = [{
     "rarity": "mythic",
     "url": "https://cards.scryfall.io/border_crop/front/c/b/cb966ee6-bf1b-4bb6-9277-8de6f3918ae2.jpg?1686967678",
     "url_back": "",
-    "types": ["Enchantment"]
 },
 {
     "seen_count": 337528,
@@ -148,7 +143,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/3/d/3d5f92bf-e4e7-487a-834c-964fdd6ad674.jpg?1686967688",
     "url_back": "",
-    "types": ["Artifact - Equipment"]
 },
 {
     "seen_count": 281413,
@@ -173,7 +167,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/c/1/c1bd3bc0-77bd-40fe-b4f1-835a04cb6e41.jpg?1687210951",
     "url_back": "",
-    "types": ["Creature - Bird Soldier"]
 },
 {
     "seen_count": 303513,
@@ -198,7 +191,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/2/6/26bb65ba-d605-4b79-a700-4a08ec5a90b4.jpg?1686967706",
     "url_back": "",
-    "types": ["Creature - Halfling Peasant"]
 },
 {
     "seen_count": 307639,
@@ -223,7 +215,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/9/b/9be412c0-45d4-4856-a8cf-63a5a822dc5c.jpg?1686967715",
     "url_back": "",
-    "types": ["Creature - Human Knight"]
 },
 {
     "seen_count": 60954,
@@ -248,7 +239,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/e/5/e59710c4-24de-419e-a8a0-e8392d450c23.jpg?1686967724",
     "url_back": "",
-    "types": ["Legendary Creature - Human Noble"]
 },
 {
     "seen_count": 221096,
@@ -273,7 +263,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/d/3/d3f990e7-54a3-4893-8510-645b2065447b.jpg?1686967733",
     "url_back": "",
-    "types": ["Creature - Human Soldier"]
 },
 {
     "seen_count": 344268,
@@ -298,7 +287,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/f/4/f4ff3330-dcca-4435-87e7-871be91a68b0.jpg?1686967744",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 326878,
@@ -323,7 +311,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/c/a/caa6dded-ab08-43d0-b2fb-008854582cba.jpg?1686967754",
     "url_back": "",
-    "types": ["Creature - Human Soldier"]
 },
 {
     "seen_count": 51897,
@@ -348,7 +335,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/1/7/17c2250a-9af1-40de-9f09-7e8c7daec520.jpg?1686967763",
     "url_back": "",
-    "types": ["Legendary Creature - Human Soldier"]
 },
 {
     "seen_count": 11523,
@@ -373,7 +359,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/2/2/2203b2cd-48e5-471a-85fe-dc81012e5d61.jpg?1686967772",
     "url_back": "",
-    "types": ["Legendary Enchantment"]
 },
 {
     "seen_count": 281746,
@@ -398,7 +383,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/b/b/bb0cda3a-20d7-425a-89fe-b0a3cd7ced03.jpg?1686967795",
     "url_back": "",
-    "types": ["Enchantment - Aura"]
 },
 {
     "seen_count": 41048,
@@ -423,7 +407,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/5/6/56274b88-6e3f-4538-bb0c-eb5e52a58ef3.jpg?1686967804",
     "url_back": "",
-    "types": ["Enchantment"]
 },
 {
     "seen_count": 15589,
@@ -448,7 +431,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/7/d/7d86dc2e-6f0c-4714-9d30-5d099d3b895c.jpg?1686967812",
     "url_back": "",
-    "types": ["Legendary Creature - Halfling Citizen"]
 },
 {
     "seen_count": 5367,
@@ -473,7 +455,6 @@ export const database = [{
     "rarity": "mythic",
     "url": "https://cards.scryfall.io/border_crop/front/e/3/e384c20b-d0c1-4781-9d11-e89e5a6bf3fc.jpg?1686967821",
     "url_back": "",
-    "types": ["Legendary Creature - Avatar Wizard"]
 },
 {
     "seen_count": 268936,
@@ -498,7 +479,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/0/1/019eab42-9e0c-4958-ac97-74d3db5580f3.jpg?1686967829",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 76133,
@@ -523,7 +503,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/5/6/5684483b-9a6a-499b-a5e1-e2815ee03cdb.jpg?1686967838",
     "url_back": "",
-    "types": ["Legendary Creature - Bird Noble"]
 },
 {
     "seen_count": 105967,
@@ -548,7 +527,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/c/4/c4e40481-aeaa-4b3d-a020-e9b6d7c11992.jpg?1686967846",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 339170,
@@ -573,7 +551,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/c/4/c4cd0756-7bf3-4cb6-9687-1f9346b0bb92.jpg?1686967856",
     "url_back": "",
-    "types": ["Creature - Halfling Peasant"]
 },
 {
     "seen_count": 337979,
@@ -598,7 +575,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/c/2/c2e2c80d-7581-46ba-8237-7886b91c19b3.jpg?1687694562",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 281248,
@@ -623,7 +599,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/8/5/85708748-40ca-4066-a287-7a6a189ff3df.jpg?1686967875",
     "url_back": "",
-    "types": ["Creature - Human Soldier"]
 },
 {
     "seen_count": 84286,
@@ -648,7 +623,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/1/b/1bd3fa8a-6c50-4f7f-9ae3-0810eec5e3db.jpg?1686967885",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 54052,
@@ -673,7 +647,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/7/5/75338f49-1f02-4333-87e4-5779ef14e688.jpg?1686967894",
     "url_back": "",
-    "types": ["Legendary Creature - Halfling Peasant"]
 },
 {
     "seen_count": 51807,
@@ -698,7 +671,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/2/1/214c270e-29ca-4d69-bea6-9252ae7707ad.jpg?1686967902",
     "url_back": "",
-    "types": ["Legendary Creature - Halfling Peasant"]
 },
 {
     "seen_count": 343057,
@@ -723,7 +695,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/0/0/002f647a-25f8-461b-8617-52674f5d577c.jpg?1686967911",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 69102,
@@ -748,7 +719,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/4/4/444b687f-2571-4c55-a497-d24b9e18bc0f.jpg?1686967920",
     "url_back": "",
-    "types": ["Creature - Halfling Soldier"]
 },
 {
     "seen_count": 331690,
@@ -773,7 +743,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/2/e/2e20c2b8-ffe3-4d14-8588-f89719358e3d.jpg?1686967929",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 336858,
@@ -798,7 +767,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/b/7/b79999df-af8c-4724-9631-20eee5a00e49.jpg?1686967938",
     "url_back": "",
-    "types": ["Creature - Spirit Soldier"]
 },
 {
     "seen_count": 320053,
@@ -823,7 +791,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/2/a/2acb8240-8e0e-4adf-a884-4986c116e704.jpg?1686967946",
     "url_back": "",
-    "types": ["Creature - Human Soldier"]
 },
 {
     "seen_count": 100478,
@@ -848,7 +815,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/9/a/9ae65f96-7bfd-4390-88bf-764c26bf4668.jpg?1688569295",
     "url_back": "",
-    "types": ["Enchantment - Saga"]
 },
 {
     "seen_count": 308159,
@@ -873,7 +839,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/1/d/1da7fc15-f894-496e-ba18-a02d42e9bedc.jpg?1686967962",
     "url_back": "",
-    "types": ["Creature - Halfling Peasant"]
 },
 {
     "seen_count": 20674,
@@ -898,7 +863,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/6/0/60ddf2cd-5b33-4c8a-a610-8e6a15404dde.jpg?1686967971",
     "url_back": "",
-    "types": ["Enchantment - Saga"]
 },
 {
     "seen_count": 293080,
@@ -923,7 +887,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/7/1/71ed2e4b-c732-472a-a589-f1f53086d9ee.jpg?1686967979",
     "url_back": "",
-    "types": ["Creature - Human Knight"]
 },
 {
     "seen_count": 115406,
@@ -948,7 +911,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/1/1/116d4030-acd2-4aa2-8254-aaaff1264459.jpg?1686967987",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 300975,
@@ -973,7 +935,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/3/0/30e1ec49-ad4f-4623-aeeb-dba07d6e6251.jpg?1686967996",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 72244,
@@ -998,7 +959,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/f/b/fb11c04f-6f17-4da4-bbf6-0bd09de6e544.jpg?1688569306",
     "url_back": "",
-    "types": ["Enchantment - Saga"]
 },
 {
     "seen_count": 325382,
@@ -1023,7 +983,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/b/6/b612452e-b8a8-4a5a-82a8-01fd463cfc77.jpg?1686968013",
     "url_back": "",
-    "types": ["Enchantment - Aura"]
 },
 {
     "seen_count": 115853,
@@ -1048,7 +1007,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/2/0/20ac63cb-fa4d-4340-8062-1029c8bd5ec8.jpg?1686968020",
     "url_back": "",
-    "types": ["Legendary Creature - Human Rogue"]
 },
 {
     "seen_count": 231713,
@@ -1073,7 +1031,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/4/2/42db2313-b13d-4292-bef2-bf86f989d32f.jpg?1686968028",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 38795,
@@ -1098,7 +1055,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/a/9/a9379675-1a32-4e2b-8aaf-5f908c595f31.jpg?1686968037",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 339947,
@@ -1123,7 +1079,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/c/2/c222577d-a3c7-41d9-b11b-62065bdb98ef.jpg?1686968046",
     "url_back": "",
-    "types": ["Creature - Human Pirate"]
 },
 {
     "seen_count": 97997,
@@ -1148,7 +1103,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/6/5/651503a2-5d1e-408a-9cdc-0cee05ab3ef0.jpg?1686968054",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 307159,
@@ -1173,7 +1127,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/b/2/b2984bc6-7c12-46e4-8dd3-b23e29a7a7ec.jpg?1686968062",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 338327,
@@ -1198,7 +1151,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/b/6/b6e0b4ff-85b5-485f-a78f-1a58bb343238.jpg?1686968073",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 65871,
@@ -1223,7 +1175,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/a/6/a62a5e55-fa1b-4c70-9293-740dd513d52e.jpg?1686968084",
     "url_back": "",
-    "types": ["Legendary Creature - Elf Noble"]
 },
 {
     "seen_count": 50976,
@@ -1248,7 +1199,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/c/c/cc9cfcc7-be64-4871-8d52-851e43fe3305.jpg?1686968094",
     "url_back": "",
-    "types": ["Legendary Creature - Avatar Wizard"]
 },
 {
     "seen_count": 255841,
@@ -1273,7 +1223,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/6/e/6e1057de-5710-415c-9a51-1d8bd86021a3.jpg?1686968102",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 30577,
@@ -1298,7 +1247,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/b/f/bf4f0a7c-620e-4ed8-8da3-fa6564e8a0cd.jpg?1686968111",
     "url_back": "",
-    "types": ["Legendary Creature - Nymph"]
 },
 {
     "seen_count": 319114,
@@ -1323,7 +1271,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/4/d/4dd89994-bdff-47ca-a65d-10afcc7e773e.jpg?1686968120",
     "url_back": "",
-    "types": ["Creature - Elf Pilot"]
 },
 {
     "seen_count": 301614,
@@ -1348,7 +1295,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/b/b/bbcc27e7-cbe4-45c2-b157-7251a10e7ba4.jpg?1686968132",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 85080,
@@ -1373,7 +1319,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/f/7/f7725dc2-2654-4ffb-b6b3-510ae64ec6af.jpg?1686968142",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 106809,
@@ -1398,7 +1343,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/0/3/03ab74cd-978a-49eb-9d38-bc8b472b3cef.jpg?1686968152",
     "url_back": "",
-    "types": ["Legendary Creature - Human Cleric"]
 },
 {
     "seen_count": 315984,
@@ -1423,7 +1367,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/5/4/54b9c323-ac9b-4864-bd57-81b557f44114.jpg?1686968162",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 283713,
@@ -1448,7 +1391,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/6/8/68c29762-6859-4564-9e1d-a87fa63b951a.jpg?1686968173",
     "url_back": "",
-    "types": ["Creature - Bird"]
 },
 {
     "seen_count": 334674,
@@ -1473,7 +1415,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/6/6/661338ff-a192-4007-a144-63d00f2e9ecb.jpg?1687277865",
     "url_back": "",
-    "types": ["Creature - Human Knight"]
 },
 {
     "seen_count": 258465,
@@ -1498,7 +1439,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/0/c/0ce44270-a684-4489-9077-521456e6dfaa.jpg?1687210977",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 36781,
@@ -1523,7 +1463,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/7/b/7b744230-8127-4d4f-9d40-75e7c2aab77c.jpg?1686968202",
     "url_back": "",
-    "types": ["Enchantment"]
 },
 {
     "seen_count": 72607,
@@ -1548,7 +1487,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/6/2/62d2ee20-abbc-4a9d-8d30-4223242123e8.jpg?1686968213",
     "url_back": "",
-    "types": ["Legendary Creature - Bird Soldier"]
 },
 {
     "seen_count": 320665,
@@ -1573,7 +1511,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/c/2/c253ee40-41c9-4cb5-a1a3-94b0aaed09d4.jpg?1686968223",
     "url_back": "",
-    "types": ["Creature - Elf Scout"]
 },
 {
     "seen_count": 284372,
@@ -1598,7 +1535,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/a/a/aa59141a-4645-4316-b714-bbf2c139786e.jpg?1686968236",
     "url_back": "",
-    "types": ["Creature - Human Peasant"]
 },
 {
     "seen_count": 30660,
@@ -1623,7 +1559,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/d/f/dfa5380a-480c-4c61-ac52-5debc49c5df9.jpg?1686968246",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 11533,
@@ -1648,7 +1583,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/8/1/819b4208-7a29-41fa-947f-614bf669b300.jpg?1686968256",
     "url_back": "",
-    "types": ["Creature - Human Ranger"]
 },
 {
     "seen_count": 65601,
@@ -1673,7 +1607,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/1/b/1bfccbab-29fa-4e92-8919-6cd4815fb655.jpg?1686968266",
     "url_back": "",
-    "types": ["Legendary Creature - Avatar Wizard"]
 },
 {
     "seen_count": 69640,
@@ -1698,7 +1631,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/8/e/8eb6c23b-e52e-4533-9625-884eb0a4d866.jpg?1686968278",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 18852,
@@ -1723,7 +1655,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/1/9/195821f4-ba3d-4412-930f-f3656b319dfd.jpg?1688569264",
     "url_back": "",
-    "types": ["Enchantment - Saga"]
 },
 {
     "seen_count": 280996,
@@ -1748,7 +1679,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/b/e/be6400e8-7f99-4005-9a92-ffbc359d3871.jpg?1686968300",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 95475,
@@ -1773,7 +1703,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/3/c/3ca1e1de-b916-445f-b3b2-0f4d0cc7ceeb.jpg?1686968311",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 12509,
@@ -1798,7 +1727,6 @@ export const database = [{
     "rarity": "mythic",
     "url": "https://cards.scryfall.io/border_crop/front/5/2/52884e67-c742-4799-9afd-55bc70b2cf40.jpg?1686968322",
     "url_back": "",
-    "types": ["Enchantment"]
 },
 {
     "seen_count": 322602,
@@ -1823,7 +1751,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/1/c/1c50d4c8-2311-4394-b73f-389eb81e898b.jpg?1686968332",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 314614,
@@ -1848,7 +1775,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/7/1/71f97505-c961-4890-acd0-32a63919ac2a.jpg?1686968343",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 12515,
@@ -1873,7 +1799,6 @@ export const database = [{
     "rarity": "mythic",
     "url": "https://cards.scryfall.io/border_crop/front/1/c/1cb8e8bb-75a0-4b5e-b4b3-5d8f3795032d.jpg?1686968354",
     "url_back": "",
-    "types": ["Legendary Creature - Kraken"]
 },
 {
     "seen_count": 326951,
@@ -1898,7 +1823,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/0/a/0adc3bff-0eb1-40e9-b954-5515babd07a3.jpg?1686968364",
     "url_back": "",
-    "types": ["Creature - Elemental"]
 },
 {
     "seen_count": 40955,
@@ -1923,7 +1847,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/e/4/e4b83aa1-33ce-4b8d-ae5a-72f64eef5f09.jpg?1686968375",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 330624,
@@ -1948,7 +1871,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/1/e/1e63983d-c36b-4440-b9e1-baaa6c7c0ba9.jpg?1686968386",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 9170,
@@ -1973,7 +1895,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/a/9/a92a2c5a-e450-494a-b23b-7ac0a6c50535.jpg?1686968397",
     "url_back": "",
-    "types": ["Enchantment"]
 },
 {
     "seen_count": 309403,
@@ -1998,7 +1919,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/7/c/7cd03837-37cc-4f6c-8e22-e3b0ff635462.jpg?1686968408",
     "url_back": "",
-    "types": ["Creature - Orc Soldier"]
 },
 {
     "seen_count": 117105,
@@ -2023,7 +1943,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/1/2/121c12c4-83ea-463e-8fdf-30718968a2bd.jpg?1686968419",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 160089,
@@ -2048,7 +1967,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/6/9/695c05ab-e46e-46c7-bd2e-ef0b2307e449.jpg?1686968429",
     "url_back": "",
-    "types": ["Creature - Bird Horror"]
 },
 {
     "seen_count": 232823,
@@ -2073,7 +1991,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/e/8/e860dd40-07c5-47c3-92a8-1ee95a953c2f.jpg?1686968439",
     "url_back": "",
-    "types": ["Creature - Human Warrior"]
 },
 {
     "seen_count": 46840,
@@ -2098,7 +2015,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/4/d/4ddda7d4-0226-404f-8418-f1f5720dcef8.jpg?1686968450",
     "url_back": "",
-    "types": ["Legendary Creature - Halfling Horror"]
 },
 {
     "seen_count": 48704,
@@ -2123,7 +2039,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/1/b/1b1e790e-ff82-4888-8aee-9986c646241a.jpg?1686968460",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 87068,
@@ -2148,7 +2063,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/5/8/58aafdb6-1c8c-4fc4-a52e-3e601be7fb0c.jpg?1686968472",
     "url_back": "",
-    "types": ["Legendary Creature - Orc Soldier"]
 },
 {
     "seen_count": 45500,
@@ -2173,7 +2087,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/a/1/a1c10e93-88eb-46b9-8adc-583661807990.jpg?1686968484",
     "url_back": "",
-    "types": ["Legendary Creature - Human Soldier"]
 },
 {
     "seen_count": 71316,
@@ -2198,7 +2111,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/8/e/8e3bd86b-e8ca-4885-a823-78fb967e6caf.jpg?1686968495",
     "url_back": "",
-    "types": ["Legendary Creature - Human Advisor"]
 },
 {
     "seen_count": 91065,
@@ -2223,7 +2135,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/4/b/4bc61b28-afdd-4de9-829b-ffe5ca7c7f19.jpg?1686968507",
     "url_back": "",
-    "types": ["Legendary Artifact - Vehicle"]
 },
 {
     "seen_count": 276625,
@@ -2248,7 +2159,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/6/7/673c6c12-2513-4d1b-acf0-6a1f741d49dd.jpg?1686968519",
     "url_back": "",
-    "types": ["Creature - Nightmare Elf"]
 },
 {
     "seen_count": 17426,
@@ -2273,7 +2183,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/4/b/4bf08071-fbf8-463e-9a57-59dbf0280dd8.jpg?1686968531",
     "url_back": "",
-    "types": ["Legendary Instant"]
 },
 {
     "seen_count": 217097,
@@ -2298,7 +2207,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/8/1/812fee97-e145-4458-b495-bc6ad227335b.jpg?1686968542",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 16324,
@@ -2323,7 +2231,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/8/7/87500b92-3d68-42f3-afa9-f8206b2ebcbb.jpg?1686968553",
     "url_back": "",
-    "types": ["Legendary Creature - Halfling Citizen"]
 },
 {
     "seen_count": 47479,
@@ -2348,7 +2255,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/e/5/e57815d4-b21f-4ceb-a3f1-73cff5f0e612.jpg?1686968563",
     "url_back": "",
-    "types": ["Enchantment"]
 },
 {
     "seen_count": 263420,
@@ -2373,7 +2279,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/1/5/15f035df-784a-4dc8-b7f5-77139a4e6e99.jpg?1686968575",
     "url_back": "",
-    "types": ["Creature - Bat"]
 },
 {
     "seen_count": 223210,
@@ -2398,7 +2303,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/a/a/aae2f15a-0629-453e-992c-a199af194a3c.jpg?1686968586",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 284267,
@@ -2423,7 +2327,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/6/4/648bc8ae-1798-4c2f-a372-0487a90ba4d3.jpg?1686968597",
     "url_back": "",
-    "types": ["Artifact Creature - Wall"]
 },
 {
     "seen_count": 312668,
@@ -2448,7 +2351,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/5/a/5ae08177-48ee-4404-834d-d3cd7482ae81.jpg?1686968608",
     "url_back": "",
-    "types": ["Enchantment - Aura"]
 },
 {
     "seen_count": 303301,
@@ -2473,7 +2375,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/c/3/c34f88d7-15a1-434f-88d7-3d4fcf406d54.jpg?1686968630",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 36760,
@@ -2498,7 +2399,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/8/3/833936c6-9381-4c0b-a81c-4a938be95040.jpg?1686968640",
     "url_back": "",
-    "types": ["Creature - Wraith Knight"]
 },
 {
     "seen_count": 73844,
@@ -2523,7 +2423,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/6/a/6a780abd-f276-40d3-b2af-d2e47d858d3d.jpg?1689938345",
     "url_back": "",
-    "types": ["Enchantment - Saga"]
 },
 {
     "seen_count": 15879,
@@ -2548,7 +2447,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/b/b/bb2dc2e0-f393-4442-818b-d3b860bfffd0.jpg?1688569235",
     "url_back": "",
-    "types": ["Enchantment - Saga"]
 },
 {
     "seen_count": 8451,
@@ -2573,7 +2471,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/7/c/7c024bae-5631-4e20-ac69-df392ac9e109.jpg?1686968669",
     "url_back": "",
-    "types": ["Creature - Orc Archer"]
 },
 {
     "seen_count": 313485,
@@ -2598,7 +2495,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/6/6/66fae9ab-2302-4dea-a4e8-701938a0ef09.jpg?1686968679",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 288311,
@@ -2623,7 +2519,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/b/d/bdd4d735-8cda-47c1-865b-48b51ac8f666.jpg?1686968689",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 9653,
@@ -2648,7 +2543,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/3/7/377d65d8-21c8-4292-97db-610e0173ba59.jpg?1686968699",
     "url_back": "",
-    "types": ["Legendary Creature - Avatar Horror"]
 },
 {
     "seen_count": 12710,
@@ -2673,7 +2567,6 @@ export const database = [{
     "rarity": "mythic",
     "url": "https://cards.scryfall.io/border_crop/front/e/4/e47cab70-55cb-481c-b4cd-32a41251f210.jpg?1686968709",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 309210,
@@ -2698,7 +2591,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/2/5/25e69fa8-7339-4bfa-8e35-9cbfe0001d8b.jpg?1686968721",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 325241,
@@ -2723,7 +2615,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/a/1/a1ad561c-ccb4-480a-88a4-0555d0ef245e.jpg?1686968733",
     "url_back": "",
-    "types": ["Creature - Wolf"]
 },
 {
     "seen_count": 234733,
@@ -2748,7 +2639,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/b/a/ba2c8c25-1fa9-4cc4-a378-5eccc25bacf0.jpg?1686968743",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 234632,
@@ -2773,7 +2663,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/a/6/a6539e26-b63b-4725-9407-caaf451de084.jpg?1687210987",
     "url_back": "",
-    "types": ["Creature - Troll"]
 },
 {
     "seen_count": 226321,
@@ -2798,7 +2687,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/9/3/936421a0-2c2a-4410-941d-4e6b88166bd1.jpg?1687694551",
     "url_back": "",
-    "types": ["Creature - Orc Berserker"]
 },
 {
     "seen_count": 46367,
@@ -2823,7 +2711,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/d/9/d9b7d7f8-503d-4660-9a18-6a8e2fcaa25f.jpg?1686968776",
     "url_back": "",
-    "types": ["Creature - Drake Beast"]
 },
 {
     "seen_count": 3856,
@@ -2848,7 +2735,6 @@ export const database = [{
     "rarity": "mythic",
     "url": "https://cards.scryfall.io/border_crop/front/a/5/a55e6508-0b59-4573-bc4e-67b27279cfed.jpg?1686968786",
     "url_back": "",
-    "types": ["Legendary Creature - Wraith Noble"]
 },
 {
     "seen_count": 294141,
@@ -2873,7 +2759,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/b/9/b91859de-1983-4c9c-a9e6-289c7dba1eb4.jpg?1686968799",
     "url_back": "",
-    "types": ["Creature - Goblin Warrior"]
 },
 {
     "seen_count": 60899,
@@ -2898,7 +2783,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/0/4/04dcef75-6f98-4233-ae32-6fe41724c8e0.jpg?1688569131",
     "url_back": "",
-    "types": ["Enchantment - Saga"]
 },
 {
     "seen_count": 295624,
@@ -2923,7 +2807,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/1/3/130f60d0-4fac-4e4e-a938-58f3b96e5335.jpg?1686968821",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 340457,
@@ -2948,7 +2831,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/2/e/2ef878cb-27b6-47d8-ad11-bd20529b0e7e.jpg?1686968832",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 40090,
@@ -2973,7 +2855,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/2/9/295b8595-5b4e-4fc8-8249-486d36e15f67.jpg?1686968845",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 12795,
@@ -2998,7 +2879,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/0/b/0bd31ce9-9551-4efe-8bd2-b97d8efbf75e.jpg?1686968857",
     "url_back": "",
-    "types": ["Legendary Creature - Human Knight"]
 },
 {
     "seen_count": 47456,
@@ -3023,7 +2903,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/d/9/d920fcaf-4988-4186-962d-cdda25d79e7b.jpg?1686968869",
     "url_back": "",
-    "types": ["Legendary Creature - Human Knight"]
 },
 {
     "seen_count": 286259,
@@ -3048,7 +2927,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/5/5/552730c5-e3a6-468f-91b2-82c272dda400.jpg?1686968881",
     "url_back": "",
-    "types": ["Creature - Dwarf Artificer"]
 },
 {
     "seen_count": 73569,
@@ -3073,7 +2951,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/3/8/38f81e68-cddd-47f4-b1d1-a297c3298c25.jpg?1686968892",
     "url_back": "",
-    "types": ["Legendary Creature - Human Soldier"]
 },
 {
     "seen_count": 23155,
@@ -3098,7 +2975,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/3/5/354b4623-50a0-41f1-ad1e-7dd6ac3852df.jpg?1686968903",
     "url_back": "",
-    "types": ["Enchantment"]
 },
 {
     "seen_count": 41095,
@@ -3123,7 +2999,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/3/7/37be98a4-0cba-46b4-be93-a9805fe77160.jpg?1686968914",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 71437,
@@ -3148,7 +3023,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/8/c/8c321159-43e5-40fc-9f0c-4ecc4f6cfd20.jpg?1686968925",
     "url_back": "",
-    "types": ["Enchantment"]
 },
 {
     "seen_count": 351216,
@@ -3173,7 +3047,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/9/b/9b5871c5-bb94-4803-93ba-cd1a630b00d6.jpg?1686968936",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 50593,
@@ -3198,7 +3071,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/5/f/5fea0c66-c776-4dc7-a235-f3822521cacd.jpg?1686968948",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 88042,
@@ -3223,7 +3095,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/2/8/28b41c48-0715-49d9-98e5-e82b706da816.jpg?1686968959",
     "url_back": "",
-    "types": ["Legendary Creature - Dwarf Warrior"]
 },
 {
     "seen_count": 348355,
@@ -3248,7 +3119,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/d/8/d8999b6c-e501-48d0-ae51-a35b96f996ec.jpg?1686968971",
     "url_back": "",
-    "types": ["Artifact - Equipment"]
 },
 {
     "seen_count": 344126,
@@ -3273,7 +3143,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/e/f/efde011d-8732-49b3-9204-8b114a3d81ba.jpg?1686968981",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 20455,
@@ -3298,7 +3167,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/8/6/868a2aa7-bcaf-409b-8802-d00ee1f2ae77.jpg?1686968993",
     "url_back": "",
-    "types": ["Legendary Creature - Dwarf Advisor"]
 },
 {
     "seen_count": 83548,
@@ -3323,7 +3191,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/e/c/ec120dae-8c40-4053-9341-1f7774464634.jpg?1686969004",
     "url_back": "",
-    "types": ["Creature - Goblin Warrior"]
 },
 {
     "seen_count": 52754,
@@ -3348,7 +3215,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/6/3/6385e769-f805-499d-9f47-494533362152.jpg?1686969015",
     "url_back": "",
-    "types": ["Legendary Creature - Goblin Soldier"]
 },
 {
     "seen_count": 298354,
@@ -3373,7 +3239,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/6/0/6050cf98-cdce-4825-9ab8-2294a2b63faf.jpg?1686969027",
     "url_back": "",
-    "types": ["Creature - Human Warrior"]
 },
 {
     "seen_count": 18752,
@@ -3398,7 +3263,6 @@ export const database = [{
     "rarity": "mythic",
     "url": "https://cards.scryfall.io/border_crop/front/8/1/81940498-a5bf-4bcd-b06d-8816887b2a2b.jpg?1686969039",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 256016,
@@ -3423,7 +3287,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/b/8/b8397d13-eeaf-4b4e-b3cd-9a9ac231873a.jpg?1687695211",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 16492,
@@ -3448,7 +3311,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/f/3/f33d5394-2248-4654-bec5-33b144752586.jpg?1686969061",
     "url_back": "",
-    "types": ["Creature - Goblin Warrior"]
 },
 {
     "seen_count": 278678,
@@ -3473,7 +3335,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/6/9/6989018c-37b1-4282-a4af-9cc97f160b4d.jpg?1687210982",
     "url_back": "",
-    "types": ["Creature - Elephant"]
 },
 {
     "seen_count": 333498,
@@ -3498,7 +3359,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/c/3/c33bf593-62e0-491a-a31a-328bce6d8735.jpg?1686969084",
     "url_back": "",
-    "types": ["Creature - Troll Soldier"]
 },
 {
     "seen_count": 293089,
@@ -3523,7 +3383,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/5/a/5a7e61a6-c602-4089-ae45-828d8e516a63.jpg?1686969095",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 216446,
@@ -3548,7 +3407,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/e/e/ee7292f7-1c7e-449c-9c52-7584d6a14c2c.jpg?1686969106",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 49783,
@@ -3573,7 +3431,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/0/6/06541200-fa4c-4b98-bdc4-44708fd2ddf6.jpg?1686969118",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 279224,
@@ -3598,7 +3455,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/2/1/21b7606a-6a4c-4bf0-b311-1883383161d2.jpg?1686969129",
     "url_back": "",
-    "types": ["Creature - Human Knight"]
 },
 {
     "seen_count": 121244,
@@ -3623,7 +3479,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/d/4/d4fbcac6-8ac9-44a8-9d1a-03d0799ac253.jpg?1686969140",
     "url_back": "",
-    "types": ["Enchantment"]
 },
 {
     "seen_count": 268246,
@@ -3648,7 +3503,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/2/f/2f506f9f-4c0d-44e8-9f81-8403d808d0e4.jpg?1686969151",
     "url_back": "",
-    "types": ["Creature - Human Knight"]
 },
 {
     "seen_count": 351245,
@@ -3673,7 +3527,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/f/5/f525b727-acde-427b-9c33-20964e8cf613.jpg?1686969162",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 144856,
@@ -3698,7 +3551,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/8/b/8b716fcc-c4cc-4987-be82-2897a9888d23.jpg?1686969173",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 5254,
@@ -3723,7 +3575,6 @@ export const database = [{
     "rarity": "mythic",
     "url": "https://cards.scryfall.io/border_crop/front/e/8/e85a82bc-49f3-4694-b688-808a541146db.jpg?1686969184",
     "url_back": "",
-    "types": ["Enchantment"]
 },
 {
     "seen_count": 281039,
@@ -3748,7 +3599,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/0/a/0a1bd073-4351-4c56-9b07-4430d0d83084.jpg?1686969195",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 11589,
@@ -3773,7 +3623,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/9/3/939b0bd0-24ea-45de-a2d3-37bbf6a3e6f9.jpg?1689938360",
     "url_back": "",
-    "types": ["Enchantment - Saga"]
 },
 {
     "seen_count": 307837,
@@ -3798,7 +3647,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/5/e/5eeecb9e-fbde-429b-b3da-18a4dbadf6de.jpg?1686969217",
     "url_back": "",
-    "types": ["Creature - Beast"]
 },
 {
     "seen_count": 326115,
@@ -3823,7 +3671,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/b/7/b7557170-39a2-49df-823e-958c3eb34801.jpg?1686969228",
     "url_back": "",
-    "types": ["Creature - Dwarf"]
 },
 {
     "seen_count": 334390,
@@ -3848,7 +3695,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/6/3/6391699e-987a-499f-9fec-96f2362760b9.jpg?1687694677",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 342016,
@@ -3873,7 +3719,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/1/c/1c24b5fa-506d-4eaf-881b-bc282c74a16c.jpg?1686969248",
     "url_back": "",
-    "types": ["Creature - Halfling Peasant"]
 },
 {
     "seen_count": 87588,
@@ -3898,7 +3743,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/2/d/2daf449a-5f3e-44fd-968e-55d8517ae797.jpg?1686969259",
     "url_back": "",
-    "types": ["Legendary Creature - Elf Noble"]
 },
 {
     "seen_count": 305696,
@@ -3923,7 +3767,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/0/a/0aa57431-39e2-4152-8a30-1c1e8faef153.jpg?1686969269",
     "url_back": "",
-    "types": ["Creature - Elf Warrior"]
 },
 {
     "seen_count": 15698,
@@ -3948,7 +3791,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/7/1/71384418-173a-4f77-adab-56e52fa23692.jpg?1686969281",
     "url_back": "",
-    "types": ["Creature - Halfling Citizen"]
 },
 {
     "seen_count": 88626,
@@ -3973,7 +3815,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/6/3/630e1e36-2f5d-44d4-9ff2-19ae75295016.jpg?1687694686",
     "url_back": "",
-    "types": ["Creature - Human Ranger"]
 },
 {
     "seen_count": 18591,
@@ -3998,7 +3839,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/6/1/616cfb94-3faf-44fe-bf04-e90643765e48.jpg?1686969302",
     "url_back": "",
-    "types": ["Enchantment"]
 },
 {
     "seen_count": 328424,
@@ -4023,7 +3863,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/7/3/73d135b2-d2b8-499c-84d9-824370c19ccc.jpg?1686969313",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 312058,
@@ -4048,7 +3887,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/a/9/a9b48836-6d37-46eb-8c41-a3eeecc72ae1.jpg?1686969323",
     "url_back": "",
-    "types": ["Creature - Treefolk"]
 },
 {
     "seen_count": 107057,
@@ -4073,7 +3911,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/c/d/cd4dbf80-187b-40e3-9e0b-526f78d9a34e.jpg?1686969333",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 281811,
@@ -4098,7 +3935,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/c/7/c7946af6-69ab-47a1-955c-1954a04752df.jpg?1686969344",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 17285,
@@ -4123,7 +3959,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/f/b/fbaab2c0-ea18-4b2f-b75b-506cbbea97e1.jpg?1688569166",
     "url_back": "",
-    "types": ["Enchantment - Saga"]
 },
 {
     "seen_count": 28934,
@@ -4148,7 +3983,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/0/f/0fb0f946-2127-4aa3-88ac-9bd2e94d8983.jpg?1686969365",
     "url_back": "",
-    "types": ["Legendary Creature - Treefolk"]
 },
 {
     "seen_count": 344970,
@@ -4173,7 +4007,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/9/d/9df34f21-798f-440d-8b09-ec5b5c0b8c12.jpg?1686969376",
     "url_back": "",
-    "types": ["Artifact - Equipment"]
 },
 {
     "seen_count": 329635,
@@ -4198,7 +4031,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/f/4/f4603f59-f899-4caf-a874-bf234d2045fb.jpg?1686969386",
     "url_back": "",
-    "types": ["Creature - Elf Scout"]
 },
 {
     "seen_count": 278341,
@@ -4223,7 +4055,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/8/5/85d22d5d-3875-42ff-b51e-c6e21db201f5.jpg?1687210970",
     "url_back": "",
-    "types": ["Creature - Treefolk"]
 },
 {
     "seen_count": 110878,
@@ -4248,7 +4079,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/8/c/8c54ee0c-1432-4f20-9a92-2cdfcbab30ac.jpg?1686969408",
     "url_back": "",
-    "types": ["Enchantment - Aura"]
 },
 {
     "seen_count": 96843,
@@ -4273,7 +4103,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/b/a/baf7a546-8a8b-4396-ab64-9a5b9abffe79.jpg?1686969418",
     "url_back": "",
-    "types": ["Legendary Creature - Elf Noble"]
 },
 {
     "seen_count": 13537,
@@ -4298,7 +4127,6 @@ export const database = [{
     "rarity": "mythic",
     "url": "https://cards.scryfall.io/border_crop/front/7/f/7f1b99e0-ffb7-4f98-8ee5-4357bb79dd2e.jpg?1687694570",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 16369,
@@ -4323,7 +4151,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/a/9/a9405577-c1dc-48e0-b2aa-6237c569d02e.jpg?1686969439",
     "url_back": "",
-    "types": ["Legendary Creature - Elf Archer"]
 },
 {
     "seen_count": 121196,
@@ -4348,7 +4175,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/2/7/27347256-2ac4-4b12-b288-0a8d578a1ff2.jpg?1686969449",
     "url_back": "",
-    "types": ["Enchantment - Saga"]
 },
 {
     "seen_count": 312741,
@@ -4373,7 +4199,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/4/e/4e3639c1-ebc3-4a0b-ab93-549e45aff0f7.jpg?1686969459",
     "url_back": "",
-    "types": ["Creature - Elf Scout"]
 },
 {
     "seen_count": 313063,
@@ -4398,7 +4223,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/d/1/d179dbbe-9c79-4dbc-955a-5209a3e2745a.jpg?1686969470",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 85730,
@@ -4423,7 +4247,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/8/8/885a3277-ef10-4dcf-ac63-eb8971cd627c.jpg?1686969480",
     "url_back": "",
-    "types": ["Legendary Creature - Halfling Citizen"]
 },
 {
     "seen_count": 312618,
@@ -4448,7 +4271,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/a/d/ad961ba1-c74f-4a44-87fe-b30e2b63e378.jpg?1686969491",
     "url_back": "",
-    "types": ["Creature - Spider"]
 },
 {
     "seen_count": 324701,
@@ -4473,7 +4295,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/8/3/8315d7cc-fc2c-45b1-8340-11ff2af3beb5.jpg?1686969503",
     "url_back": "",
-    "types": ["Creature - Dwarf Soldier"]
 },
 {
     "seen_count": 313284,
@@ -4498,7 +4319,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/d/1/d15fd66d-fa7e-411d-9014-a56caa879d93.jpg?1686969514",
     "url_back": "",
-    "types": ["Creature - Dog"]
 },
 {
     "seen_count": 80790,
@@ -4523,7 +4343,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/f/5/f5baee8d-88e7-4468-94a9-66ca8e2caf15.jpg?1686969525",
     "url_back": "",
-    "types": ["Legendary Creature - Halfling Citizen"]
 },
 {
     "seen_count": 347722,
@@ -4548,7 +4367,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/b/c/bc60dc65-6813-4d57-877b-df195ed00d00.jpg?1686969536",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 79395,
@@ -4573,7 +4391,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/b/8/b889037f-b95f-4756-80aa-04097d2818c3.jpg?1686969546",
     "url_back": "",
-    "types": ["Legendary Creature - Treefolk"]
 },
 {
     "seen_count": 6209,
@@ -4598,7 +4415,6 @@ export const database = [{
     "rarity": "mythic",
     "url": "https://cards.scryfall.io/border_crop/front/b/3/b3988120-ebbe-4d24-9bb4-8c5331a14034.jpg?1686969557",
     "url_back": "",
-    "types": ["Legendary Creature - Avatar Wizard"]
 },
 {
     "seen_count": 344481,
@@ -4623,7 +4439,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/4/6/46b7f493-1b57-4b07-8510-30703282f879.jpg?1686969568",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 37886,
@@ -4648,7 +4463,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/3/c/3c8a4c7d-527c-49ea-a115-a9e747c0fd03.jpg?1686969579",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 106732,
@@ -4673,7 +4487,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/1/3/13bc14f9-c90c-499d-9024-3182d78e0a88.jpg?1686969589",
     "url_back": "",
-    "types": ["Enchantment"]
 },
 {
     "seen_count": 346255,
@@ -4698,7 +4511,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/9/2/92cd3884-18d1-4200-b28e-a52349ef37aa.jpg?1686969600",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 78125,
@@ -4723,7 +4535,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/b/c/bcc7c41c-f416-457e-91ba-1f338f45eeac.jpg?1686969611",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 253123,
@@ -4748,7 +4559,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/6/5/6589b339-9067-4e9b-bfdb-c49f8b3ef2d4.jpg?1686969622",
     "url_back": "",
-    "types": ["Creature - Human Shaman"]
 },
 {
     "seen_count": 15036,
@@ -4773,7 +4583,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/7/3/73ca5f48-0117-49d6-8b00-b8482e3545b3.jpg?1686969633",
     "url_back": "",
-    "types": ["Legendary Creature - Human Ranger"]
 },
 {
     "seen_count": 8174,
@@ -4798,7 +4607,6 @@ export const database = [{
     "rarity": "mythic",
     "url": "https://cards.scryfall.io/border_crop/front/e/9/e98d5321-ec09-456c-a9ea-c8ca2cfc6205.jpg?1686969644",
     "url_back": "",
-    "types": ["Legendary Creature - Human Noble"]
 },
 {
     "seen_count": 5726,
@@ -4823,7 +4631,6 @@ export const database = [{
     "rarity": "mythic",
     "url": "https://cards.scryfall.io/border_crop/front/5/4/547f92d4-cd1d-4ca7-a6e2-6473b4d3c832.jpg?1686969656",
     "url_back": "",
-    "types": ["Legendary Creature - Elf Noble"]
 },
 {
     "seen_count": 84962,
@@ -4848,7 +4655,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/c/5/c544e301-13b4-4dec-b65c-d54809bb7736.jpg?1686969667",
     "url_back": "",
-    "types": ["Legendary Creature - Elf Noble"]
 },
 {
     "seen_count": 13768,
@@ -4873,7 +4679,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/4/1/416880c3-cefb-45ea-bcc3-2ec7a70c8097.jpg?1686969678",
     "url_back": "",
-    "types": ["Legendary Creature - Avatar Demon"]
 },
 {
     "seen_count": 65935,
@@ -4898,7 +4703,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/5/2/527df93e-cc2b-4216-909a-4ada1abcbfd3.jpg?1687694657",
     "url_back": "",
-    "types": ["Legendary Creature - Halfling Rogue"]
 },
 {
     "seen_count": 93055,
@@ -4923,7 +4727,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/f/3/f3fd9ff1-278b-4e6a-b30b-90250d8b5762.jpg?1686969700",
     "url_back": "",
-    "types": ["Legendary Creature - Human Peasant"]
 },
 {
     "seen_count": 63324,
@@ -4948,7 +4751,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/f/a/fa8654cf-431c-427b-b78f-0e48f6007e9e.jpg?1686969711",
     "url_back": "",
-    "types": ["Legendary Creature - Human Noble"]
 },
 {
     "seen_count": 22702,
@@ -4973,7 +4775,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/8/e/8ebd8813-4aaf-48bf-9243-3ec4099b8372.jpg?1686969721",
     "url_back": "",
-    "types": ["Legendary Artifact"]
 },
 {
     "seen_count": 19168,
@@ -4998,7 +4799,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/d/2/d26ffb2c-f7a5-4a4f-9b99-c8de9dfd49da.jpg?1686969733",
     "url_back": "",
-    "types": ["Legendary Creature - Elf Noble"]
 },
 {
     "seen_count": 13701,
@@ -5023,7 +4823,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/a/d/adffb389-c9a3-41c4-b078-292a2bcf870d.jpg?1686969744",
     "url_back": "",
-    "types": ["Legendary Creature - Human Knight"]
 },
 {
     "seen_count": 11267,
@@ -5048,7 +4847,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/8/7/8700923a-e9ff-4ced-87fe-1ab26554623a.jpg?1686969755",
     "url_back": "",
-    "types": ["Legendary Creature - Human Noble"]
 },
 {
     "seen_count": 19223,
@@ -5073,7 +4871,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/0/4/04779a7e-b453-48b9-b392-6d6fd0b8d283.jpg?1686969766",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 111537,
@@ -5098,7 +4895,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/2/4/24076763-88ba-4dee-b548-9c27bd34fdb7.jpg?1686969776",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 71093,
@@ -5123,7 +4919,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/d/e/de1c0399-9db8-4901-b72e-0010eb9b92b0.jpg?1686969787",
     "url_back": "",
-    "types": ["Legendary Creature - Halfling Scout"]
 },
 {
     "seen_count": 20276,
@@ -5148,7 +4943,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/a/6/a6e5c3b3-9a70-4a1c-bfb3-db27e51c4b8d.jpg?1686969798",
     "url_back": "",
-    "types": ["Legendary Creature - Elf Noble"]
 },
 {
     "seen_count": 14844,
@@ -5173,7 +4967,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/e/2/e2b975e6-e709-481f-bfbc-41a832508283.jpg?1686969808",
     "url_back": "",
-    "types": ["Legendary Creature - Avatar Wizard"]
 },
 {
     "seen_count": 77379,
@@ -5198,7 +4991,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/8/e/8ebf2a25-9bee-4146-af83-f22aab6db2a8.jpg?1688134626",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 30666,
@@ -5223,7 +5015,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/d/f/df4be38c-3f93-4ff4-bff4-94753b96f2f3.jpg?1686969830",
     "url_back": "",
-    "types": ["Legendary Creature - Dwarf Warrior"]
 },
 {
     "seen_count": 107849,
@@ -5248,7 +5039,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/1/a/1a42c951-1146-4f49-a690-7d385962b191.jpg?1686969841",
     "url_back": "",
-    "types": ["Legendary Creature - Bird Noble"]
 },
 {
     "seen_count": 13637,
@@ -5273,7 +5063,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/c/c/cc857755-62e6-4d29-95f5-82f5d4bde522.jpg?1686969851",
     "url_back": "",
-    "types": ["Legendary Creature - Spirit Noble"]
 },
 {
     "seen_count": 103690,
@@ -5298,7 +5087,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/c/8/c8bd408c-9e6d-436d-9c4f-9ef3203aeb64.jpg?1686969862",
     "url_back": "",
-    "types": ["Legendary Creature - Elf Archer"]
 },
 {
     "seen_count": 29006,
@@ -5323,7 +5111,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/c/e/ce01ff8f-a037-484f-9148-c847ffaabc5a.jpg?1686969873",
     "url_back": "",
-    "types": ["Legendary Creature - Halfling Rogue"]
 },
 {
     "seen_count": 66559,
@@ -5348,7 +5135,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/6/5/65e9a757-7ed4-4cc0-bb6f-a59fa69b32a5.jpg?1686969884",
     "url_back": "",
-    "types": ["Legendary Creature - Orc Soldier"]
 },
 {
     "seen_count": 24129,
@@ -5373,7 +5159,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/b/7/b7c5fe73-1684-4edc-9f9b-976b2246d5ea.jpg?1686969894",
     "url_back": "",
-    "types": ["Legendary Creature - Halfling Knight"]
 },
 {
     "seen_count": 66990,
@@ -5398,7 +5183,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/7/6/76a88814-aa30-4297-b338-3d851bfe7256.jpg?1686969905",
     "url_back": "",
-    "types": ["Legendary Creature - Human Advisor"]
 },
 {
     "seen_count": 69584,
@@ -5423,7 +5207,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/0/3/0362b7c4-fff5-4bc2-b32d-913f85c23cc4.jpg?1686969917",
     "url_back": "",
-    "types": ["Legendary Creature - Treefolk"]
 },
 {
     "seen_count": 19393,
@@ -5448,7 +5231,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/0/8/08b7a4d8-1183-430e-8ea4-016844f33200.jpg?1686969929",
     "url_back": "",
-    "types": ["Legendary Creature - Halfling Soldier"]
 },
 {
     "seen_count": 88744,
@@ -5473,7 +5255,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/7/d/7d486def-7c3f-41e9-bb28-4582450a7b9e.jpg?1686969940",
     "url_back": "",
-    "types": ["Legendary Creature - Human Noble"]
 },
 {
     "seen_count": 121836,
@@ -5498,7 +5279,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/3/7/3700a65c-6f54-4d56-9c6f-8364c45a058c.jpg?1686969951",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 91135,
@@ -5523,7 +5303,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/3/f/3f440fa1-5387-41d6-a80f-5b19dbb21514.jpg?1686969962",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 18678,
@@ -5548,7 +5327,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/a/1/a1b6f13e-63d0-46bf-aa57-23c2dbdf62dd.jpg?1686969973",
     "url_back": "",
-    "types": ["Legendary Creature - Halfling Peasant"]
 },
 {
     "seen_count": 7719,
@@ -5573,7 +5351,6 @@ export const database = [{
     "rarity": "mythic",
     "url": "https://cards.scryfall.io/border_crop/front/8/c/8cfcc7ec-87a2-4712-8d82-217bd8600891.jpg?1686969983",
     "url_back": "",
-    "types": ["Legendary Creature - Avatar Wizard"]
 },
 {
     "seen_count": 4617,
@@ -5598,7 +5375,6 @@ export const database = [{
     "rarity": "mythic",
     "url": "https://cards.scryfall.io/border_crop/front/0/3/034e0929-b2c7-4b5f-94f2-8eaf4fb1a2a1.jpg?1686969994",
     "url_back": "",
-    "types": ["Legendary Creature - Avatar Horror"]
 },
 {
     "seen_count": 25601,
@@ -5623,7 +5399,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/6/b/6b98850c-ad69-42da-b91a-8dc5e226c444.jpg?1686970005",
     "url_back": "",
-    "types": ["Instant"]
 },
 {
     "seen_count": 82492,
@@ -5648,7 +5423,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/e/c/ec0984b2-bed6-41b1-9087-2cfd16749037.jpg?1686970017",
     "url_back": "",
-    "types": ["Sorcery"]
 },
 {
     "seen_count": 85265,
@@ -5673,7 +5447,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/4/c/4c7d861d-7832-4c15-8d6c-8c07a9a57891.jpg?1686970028",
     "url_back": "",
-    "types": ["Legendary Creature - Horse"]
 },
 {
     "seen_count": 30484,
@@ -5698,7 +5471,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/0/7/0731f64a-15da-4814-82e9-3a42e1657f36.jpg?1686970039",
     "url_back": "",
-    "types": ["Legendary Creature - Orc Soldier"]
 },
 {
     "seen_count": 41766,
@@ -5723,7 +5495,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/e/0/e0e446bd-8295-4fca-957a-e4710a15d8e8.jpg?1686970050",
     "url_back": "",
-    "types": ["Legendary Creature - Avatar Rogue"]
 },
 {
     "seen_count": 12432,
@@ -5748,7 +5519,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/a/1/a14c4b29-3363-45ce-9190-0f79e1a0ef7f.jpg?1686970060",
     "url_back": "",
-    "types": ["Legendary Creature - Spider Demon"]
 },
 {
     "seen_count": 15220,
@@ -5773,7 +5543,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/1/3/13253f8d-1897-41e8-a904-9e57ac7eff0a.jpg?1686970071",
     "url_back": "",
-    "types": ["Legendary Creature - Halfling Horror"]
 },
 {
     "seen_count": 101833,
@@ -5798,7 +5567,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/5/4/54461d61-a745-467f-9fbe-b5e7a8edbdbf.jpg?1686970082",
     "url_back": "",
-    "types": ["Legendary Creature - Human Ranger"]
 },
 {
     "seen_count": 74884,
@@ -5823,7 +5591,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/f/6/f6dcd1ca-4943-46e4-bb5d-c14949e21e23.jpg?1686970093",
     "url_back": "",
-    "types": ["Legendary Creature - Human Noble"]
 },
 {
     "seen_count": 18105,
@@ -5848,7 +5615,6 @@ export const database = [{
     "rarity": "mythic",
     "url": "https://cards.scryfall.io/border_crop/front/2/a/2ab04c49-76a1-4896-8dca-8cb4c615f489.jpg?1686970104",
     "url_back": "",
-    "types": ["Legendary Creature - God Bard"]
 },
 {
     "seen_count": 85641,
@@ -5873,7 +5639,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/e/9/e914c7fc-be3c-4346-bf37-6e10f4998204.jpg?1686970114",
     "url_back": "",
-    "types": ["Legendary Creature - Orc Soldier"]
 },
 {
     "seen_count": 3461,
@@ -5898,7 +5663,6 @@ export const database = [{
     "rarity": "mythic",
     "url": "https://cards.scryfall.io/border_crop/front/7/e/7e7b9eea-a224-4db1-a089-cb385f7af20c.jpg?1686970125",
     "url_back": "",
-    "types": ["Legendary Artifact - Equipment"]
 },
 {
     "seen_count": 119588,
@@ -5923,7 +5687,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/f/0/f0eb7284-78a5-4b5e-8f6d-6be540e0bef8.jpg?1686970135",
     "url_back": "",
-    "types": ["Artifact - Equipment"]
 },
 {
     "seen_count": 126845,
@@ -5948,7 +5711,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/1/5/1500126f-fbe4-4c39-bb06-1a36e2c4682f.jpg?1686970148",
     "url_back": "",
-    "types": ["Artifact"]
 },
 {
     "seen_count": 7364,
@@ -5973,7 +5735,6 @@ export const database = [{
     "rarity": "mythic",
     "url": "https://cards.scryfall.io/border_crop/front/8/2/8296ebf7-45ed-4b38-acf2-b48d9fb3e706.jpg?1686970159",
     "url_back": "",
-    "types": ["Legendary Artifact - Equipment"]
 },
 {
     "seen_count": 7921,
@@ -5998,7 +5759,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/b/1/b14eaeec-d7ce-462a-90d3-2ae5ff605fdb.jpg?1686970170",
     "url_back": "",
-    "types": ["Legendary Artifact"]
 },
 {
     "seen_count": 20406,
@@ -6023,7 +5783,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/d/d/dd86b71f-d736-426f-bf15-013bc8da1a08.jpg?1686970181",
     "url_back": "",
-    "types": ["Legendary Artifact"]
 },
 {
     "seen_count": 325444,
@@ -6048,7 +5807,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/b/5/b590d028-ea6a-4550-b5e2-ba328a81bbc0.jpg?1686970192",
     "url_back": "",
-    "types": ["Artifact"]
 },
 {
     "seen_count": 331387,
@@ -6073,7 +5831,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/3/b/3b46aacf-b31a-4380-9e4b-82795fbaba3b.jpg?1686970202",
     "url_back": "",
-    "types": ["Artifact - Food"]
 },
 {
     "seen_count": 120566,
@@ -6098,7 +5855,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/b/c/bc95036f-98f2-4ea7-93bb-542ad7064540.jpg?1686970213",
     "url_back": "",
-    "types": ["Legendary Artifact"]
 },
 {
     "seen_count": 16917,
@@ -6123,7 +5879,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/0/f/0fd1fc09-a09d-45e6-8a07-3a8a83b4e6ec.jpg?1686970224",
     "url_back": "",
-    "types": ["Legendary Artifact - Equipment"]
 },
 {
     "seen_count": 4484,
@@ -6148,7 +5903,6 @@ export const database = [{
     "rarity": "mythic",
     "url": "https://cards.scryfall.io/border_crop/front/d/5/d5806e68-1054-458e-866d-1f2470f682b2.jpg?1690817875",
     "url_back": "",
-    "types": ["Legendary Artifact"]
 },
 {
     "seen_count": 4148,
@@ -6173,7 +5927,6 @@ export const database = [{
     "rarity": "mythic",
     "url": "https://cards.scryfall.io/border_crop/front/6/e/6efb6a69-562c-4d95-858d-b067444cfd7e.jpg?1686970247",
     "url_back": "",
-    "types": ["Legendary Artifact"]
 },
 {
     "seen_count": 13844,
@@ -6198,7 +5951,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/a/c/ac6d60fe-681b-495e-813c-c8418f3f29e5.jpg?1686970260",
     "url_back": "",
-    "types": ["Legendary Artifact"]
 },
 {
     "seen_count": 350074,
@@ -6223,7 +5975,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/b/6/b60b4f2e-ff47-4762-a803-30e81b665c09.jpg?1686970272",
     "url_back": "",
-    "types": ["Artifact Creature - Scarecrow"]
 },
 {
     "seen_count": 21385,
@@ -6248,7 +5999,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/a/f/afbec7e7-f5b9-407e-bf96-2e088710e791.jpg?1686970284",
     "url_back": "",
-    "types": ["Legendary Artifact - Equipment"]
 },
 {
     "seen_count": 130241,
@@ -6273,7 +6023,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/b/c/bc02e193-df33-4eb1-adc1-b51ee931218a.jpg?1686970297",
     "url_back": "",
-    "types": ["Legendary Artifact"]
 },
 {
     "seen_count": 342060,
@@ -6298,7 +6047,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/1/c/1c6ed742-dfb1-41e2-8f19-184555109e34.jpg?1686970310",
     "url_back": "",
-    "types": ["Artifact"]
 },
 {
     "seen_count": 19351,
@@ -6323,7 +6071,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/e/b/eb5038af-06b0-401e-8dea-a1a8483788ae.jpg?1686970323",
     "url_back": "",
-    "types": ["Legendary Land"]
 },
 {
     "seen_count": 301745,
@@ -6348,7 +6095,6 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/2/1/219c7b57-b62b-42d1-85d9-4b57624a3f54.jpg?1686970335",
     "url_back": "",
-    "types": ["Land"]
 },
 {
     "seen_count": 121953,
@@ -6373,7 +6119,6 @@ export const database = [{
     "rarity": "uncommon",
     "url": "https://cards.scryfall.io/border_crop/front/d/d/dd698f10-b0fc-42fc-84ec-f5a0d96bfa1d.jpg?1687694648",
     "url_back": "",
-    "types": ["Legendary Land"]
 },
 {
     "seen_count": 22521,
@@ -6398,7 +6143,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/b/3/b38b6760-616f-4b11-8ce7-ac1223c7fd53.jpg?1686970358",
     "url_back": "",
-    "types": ["Legendary Land"]
 },
 {
     "seen_count": 34999,
@@ -6423,7 +6167,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/0/b/0be723d6-4ada-4c3f-b87b-8ab83a4bbb8f.jpg?1686970369",
     "url_back": "",
-    "types": ["Legendary Land"]
 },
 {
     "seen_count": 12614,
@@ -6448,7 +6191,6 @@ export const database = [{
     "rarity": "mythic",
     "url": "https://cards.scryfall.io/border_crop/front/b/5/b5bc71a1-2344-4bc6-aa60-658cec19d0d6.jpg?1686970382",
     "url_back": "",
-    "types": ["Legendary Land"]
 },
 {
     "seen_count": 26856,
@@ -6473,7 +6215,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/b/a/bacd500c-1389-4314-a53e-0ad510d6fb79.jpg?1686970394",
     "url_back": "",
-    "types": ["Legendary Land"]
 },
 {
     "seen_count": 26584,
@@ -6498,7 +6239,6 @@ export const database = [{
     "rarity": "rare",
     "url": "https://cards.scryfall.io/border_crop/front/d/5/d5178a1b-588b-4414-a370-ac6eed51187a.jpg?1686970405",
     "url_back": "",
-    "types": ["Legendary Land"]
 },
 {
     "seen_count": 314971,
@@ -6523,5 +6263,4 @@ export const database = [{
     "rarity": "common",
     "url": "https://cards.scryfall.io/border_crop/front/2/5/25932483-58cd-4ae5-82bf-ab455177d117.jpg?1686970417",
     "url_back": "",
-    "types": ["Land"]
 }]
