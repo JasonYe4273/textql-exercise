@@ -14,12 +14,17 @@ export function parseSQL(query: string) {
 	// Parse tokens into types
 	// Parsed from left to right
 	// Tokens that don't immediately fit will be given an error and ignored
-	let token_types = []
 	let parsed = {
-		token_types: [],
+		token_types: {
+			'misc': [],
+			'select': [],
+			'from': [],
+			'where': [],
+			'limit': []
+		},
 		columns: [],
 		table: '',
-		conditions: null,
+		conditions_clause: null,
 		limit: -1
 	}
 
@@ -28,6 +33,9 @@ export function parseSQL(query: string) {
 	let from = -1
 	let where = -1
 	let limit = -1
+
+	// Save conditions string for later parsing
+	let conditions_str = ''
 
 	// Track which part of the query we're in
 	// column: looking for column to add to list of columns
@@ -39,6 +47,7 @@ export function parseSQL(query: string) {
 	// comma: looking for comma to delimit next column or keyword to continue
 	// conditions: part of a condition block
 	let mode = 'keyword'
+	let token_row = 'misc'
 
 	// Keywords that can't be used as names
 	const keywords = ['SELECT', 'FROM', 'WHERE', 'LIMIT', '!=', '=', '<', '>', 'AND', 'OR', '(', ')', ',', '*']
@@ -51,7 +60,7 @@ export function parseSQL(query: string) {
 
 		// If looking for column_start, take *
 		if (mode === 'column_start' && t === '*') {
-			token_types.push({
+			parsed.token_types[token_row].push({
 				'str': t,
 				'type': 'column'
 			})
@@ -63,19 +72,19 @@ export function parseSQL(query: string) {
 		// If looking for any column, take any non-keyword
 		if (mode === 'column' || mode === 'column_start') {
 			if (keywords.includes(t)) {
-				token_types.push({
+				parsed.token_types[token_row].push({
 					'str': t,
 					'type': 'error',
 					'error': 'Unexpected keyword; expected column name'
 				})
 			} else {
 				if (t in data_types) {
-					token_types.push({
+					parsed.token_types[token_row].push({
 						'str': t,
 						'type': `${data_types[t]}_col`,
 					})
 				} else {
-					token_types.push({
+					parsed.token_types[token_row].push({
 						'str': t,
 						'type': 'error',
 						'error': `Cannot find column ${t}`
@@ -91,19 +100,19 @@ export function parseSQL(query: string) {
 		// If looking for table, take next non-keyword
 		if (mode === 'table') {
 			if (keywords.includes(t)) {
-				token_types.push({
+				parsed.token_types[token_row].push({
 					'str': t,
 					'type': 'error',
 					'error': 'Unexpected keyword; expected table name'
 				})
 			} else {
 				if (t === 'table') {
-					token_types.push({
+					parsed.token_types[token_row].push({
 						'str': t,
 						'type': 'table',
 					})
 				} else {
-					token_types.push({
+					parsed.token_types[token_row].push({
 						'str': t,
 						'type': 'error',
 						'error': `Cannot find table ${t}`
@@ -118,7 +127,7 @@ export function parseSQL(query: string) {
 		// If looking for limit, take next integer
 		if (mode === 'limit') {
 			if (keywords.includes(t)) {
-				token_types.push({
+				parsed.token_types[token_row].push({
 					'str': t,
 					'type': 'error',
 					'error': 'Unexpected keyword; expected limit'
@@ -126,14 +135,14 @@ export function parseSQL(query: string) {
 			} else {
 				let num = Number(t)
 				if (Number.isInteger(num) && num > 0) {
-					token_types.push({
+					parsed.token_types[token_row].push({
 						'str': t,
 						'type': 'limit',
 					})
 					parsed.limit = num
 					mode = 'keyword'
 				} else {
-					token_types.push({
+					parsed.token_types[token_row].push({
 						'str': t,
 						'type': 'error',
 						'error': 'Expected positive number for limit'
@@ -147,7 +156,7 @@ export function parseSQL(query: string) {
 		if (t === 'SELECT') {
 			// There can only be one SELECT
 			if (select !== -1) {
-				token_types.push({
+				parsed.token_types[token_row].push({
 					'str': 'SELECT',
 					'type': 'error',
 					'error': "Cannot have more than one SELECT"
@@ -155,7 +164,8 @@ export function parseSQL(query: string) {
 			} else {
 				select = i
 				mode = 'column_start'
-				token_types.push({
+				token_row = 'select'
+				parsed.token_types[token_row].push({
 					'str': 'SELECT',
 					'type': 'keyword'
 				})
@@ -165,7 +175,7 @@ export function parseSQL(query: string) {
 		if (t === 'FROM') {
 			// There can only be one FROM
 			if (from !== -1) {
-				token_types.push({
+				parsed.token_types[token_row].push({
 					'str': 'FROM',
 					'type': 'error',
 					'error': "Cannot have more than one FROM"
@@ -173,7 +183,8 @@ export function parseSQL(query: string) {
 			} else {
 				from = i
 				mode = 'table'
-				token_types.push({
+				token_row = 'from'
+				parsed.token_types[token_row].push({
 					'str': 'FROM',
 					'type': 'keyword'
 				})
@@ -183,7 +194,7 @@ export function parseSQL(query: string) {
 		if (t === 'LIMIT') {
 			// There can only be one LIMIT
 			if (limit !== -1) {
-				token_types.push({
+				parsed.token_types[token_row].push({
 					'str': 'LIMIT',
 					'type': 'error',
 					'error': "Cannot have more than one LIMIT"
@@ -191,7 +202,8 @@ export function parseSQL(query: string) {
 			} else {
 				limit = i
 				mode = 'limit'
-				token_types.push({
+				token_row = 'limit'
+				parsed.token_types[token_row].push({
 					'str': 'LIMIT',
 					'type': 'keyword'
 				})
@@ -201,7 +213,7 @@ export function parseSQL(query: string) {
 		if (t === 'WHERE') {
 			// There can only be one WHERE
 			if (where !== -1) {
-				token_types.push({
+				parsed.token_types[token_row].push({
 					'str': 'WHERE',
 					'type': 'error',
 					'error': "Cannot have more than one WHERE"
@@ -209,7 +221,8 @@ export function parseSQL(query: string) {
 			} else {
 				where = i
 				mode = 'conditions'
-				token_types.push({
+				token_row = 'where'
+				parsed.token_types[token_row].push({
 					'str': 'WHERE',
 					'type': 'keyword'
 				})
@@ -219,7 +232,7 @@ export function parseSQL(query: string) {
 
 		// If looking for comma, also allow comma in addition to above keywords
 		if (mode === 'comma' && t === ',') {
-			token_types.push({
+			parsed.token_types[token_row].push({
 				'str': t,
 				'type': 'comma'
 			})
@@ -229,7 +242,7 @@ export function parseSQL(query: string) {
 
 		// If mode is keyword or comma, reject anything that isn't SELECT, FROM, WHERE, LIMIT
 		if (mode === 'keyword' || mode === 'comma') {
-			token_types.push({
+			parsed.token_types[token_row].push({
 				'str': t,
 				'type': 'error',
 				'error': 'Expected new keyword clause'
@@ -239,21 +252,27 @@ export function parseSQL(query: string) {
 
 		// Leave processing conditions to later function
 		if (mode === 'conditions') {
-			parsed.conditions += ` ${t}`
+			conditions_str += ` ${t}`
 			continue
 		}
+
+		console.log('Error, should not reach here')
 	}
 
-	let conditions = parse_conditions(parsed.conditions.split(' ').slice(1))
+	// If there are conditions, parse those; otherwise, set conditions to TRUE
+	if (conditions_str !== '') {
+		let conditions = parse_conditions(conditions_str.split(' ').slice(1))
 
-	// Splice condition token types into token types
-	parsed.token_types = [
-		...token_types.slice(0,where+1),
-		...conditions.token_types,
-		...token_types.slice(where+1)
-	]
+		// Splice condition token types into token types
+		parsed.token_types['where'] = [
+			...parsed.token_types['where'],
+			...conditions.token_types,
+		]
 
-	parsed.conditions_clause = conditions.clause
+		parsed.conditions_clause = conditions.clause
+	} else {
+		parsed.conditions_clause = new Constant('true', 'bool')
+	}
 
 	return parsed
 }
@@ -315,13 +334,15 @@ function parse_conditions(conditions: string[]) {
 	let changed = true
 	while (clauses.length > 1 && changed) {
 		changed = false
+
+		// Collapse comparisons first, then equality, then AND/OR, then parens
 		for (let i = 0; i < clauses.length-2; i++) {
 			let tti1 = token_type_indices[i+1]
 
+			// comparative operator
 			if (!keywords.includes(clauses[i]) &&
 						!keywords.includes(clauses[i+2]) &&
 						comp.includes(clauses[i+1])) {
-				// comparative operator
 				let o = new Operator(clauses[i], clauses[i+2], clauses[i+1])
 
 				// if left and right don't both have type num, error
@@ -345,10 +366,10 @@ function parse_conditions(conditions: string[]) {
 		for (let i = 0; i < clauses.length-2; i++) {
 			let tti1 = token_type_indices[i+1]
 
+			// equality operator
 			if (!keywords.includes(clauses[i]) &&
 						!keywords.includes(clauses[i+2]) &&
 						eq.includes(clauses[i+1])) {
-				// equality operator
 				let o = new Operator(clauses[i], clauses[i+2], clauses[i+1])
 
 				// if left and right don't have same type, error
@@ -371,10 +392,10 @@ function parse_conditions(conditions: string[]) {
 		for (let i = 0; i < clauses.length-2; i++) {
 			let tti1 = token_type_indices[i+1]
 
+			// and/or operator
 			if (!keywords.includes(clauses[i]) &&
 						!keywords.includes(clauses[i+2]) &&
 						andor.includes(clauses[i+1])) {
-				// and/or operator
 				let o = new Operator(clauses[i], clauses[i+2], clauses[i+1])
 
 				// if left and right aren't both booleans, error
@@ -421,6 +442,7 @@ function parse_conditions(conditions: string[]) {
 	}
 }
 
+// Clause class represents a conditional clause, to organize condition parsing
 class Clause {
 	type: string;
 
