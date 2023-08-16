@@ -1,4 +1,8 @@
-import { database, data_types } from './database.js'
+// For an actual database implementation you would need to use
+// a server call to dynamically get data types, and would need
+// logic to get it based on which table is being queried
+import { data_types } from './database.ts'
+import { Column, Constant, Operator } from './clause.ts'
 
 // Given a SQL query string, return a JSON object representing the parsed string
 export function parseSQL(query: string) {
@@ -25,7 +29,9 @@ export function parseSQL(query: string) {
 		columns: [],
 		table: '',
 		conditions_clause: null,
-		limit: -1
+		limit: -1,
+		valid: true,
+		error: ''
 	}
 
 	// Keep track of whether we've seen SELECT, FROM, WHERE, LIMIT
@@ -255,8 +261,6 @@ export function parseSQL(query: string) {
 			conditions_str += ` ${t}`
 			continue
 		}
-
-		console.log('Error, should not reach here')
 	}
 
 	// If there are conditions, parse those; otherwise, set conditions to TRUE
@@ -271,11 +275,50 @@ export function parseSQL(query: string) {
 
 		parsed.conditions_clause = conditions.clause
 	} else {
-		parsed.conditions_clause = new Constant('true', 'bool')
+		parsed.conditions_clause = new Constant('TRUE', 'bool')
+	}
+
+	// Check validity
+	// Check for token parse errors
+	for (let row in parsed.token_types) {
+		for (let i = 0; i < parsed.token_types[row].length; i++) {
+			if (parsed.token_types[row][i].type === 'error') {
+				parsed.valid = false
+				return parsed
+			}
+		}
+	}
+
+	// Check that columns, table, conditions clause, and limit exist.
+	if (!parsed.columns.length) {
+		parsed.valid = false
+		parsed.error = 'No columns specified'
+		return parsed
+	}
+
+	if (!parsed.table) {
+		parsed.valid = false
+		parsed.error = 'No table specified'
+		return parsed
+	}
+
+	if (!parsed.conditions_clause) {
+		parsed.valid = false
+		parsed.error = 'Could not parse conditions clause'
+		return parsed
+	}
+
+	// Only require limit if LIMIT keyword detected
+	if (limit != -1 && parsed.limit === -1) {
+		parsed.valid = false
+		parsed.error = 'Expecting limit but did not find one'
+		return parsed
 	}
 
 	return parsed
 }
+
+
 
 // Returns token types and conditions clause structure if valid
 function parse_conditions(conditions: string[]) {
@@ -439,105 +482,5 @@ function parse_conditions(conditions: string[]) {
 	return {
 		token_types,
 		clause: clauses.length === 1 ? clauses[0]: null
-	}
-}
-
-// Clause class represents a conditional clause, to organize condition parsing
-class Clause {
-	type: string;
-
-	constructor() {};
-
-	evaluate(row: Object) {
-		return false
-	}
-}
-
-class Column extends Clause {
-	col: string;
-
-	constructor(name: string, type: string) {
-		super()
-		this.col = name
-		this.type = type
-	}
-
-	evaluate(row: Object) {
-		return row[col]
-	}
-}
-
-class Constant extends Clause {
-	value: string;
-
-	constructor(value: string, type: string) {
-		super()
-		this.value = value
-		this.type = type
-	}
-
-	evaluate(row: Object) {
-		if (this.type === 'num') {
-			return Number(value)
-		} else if (this.type === 'bool') {
-			return this.value === 'TRUE'
-		} else {
-			return this.value
-		}
-	}
-}
-
-class Operator extends Clause {
-	left: Clause;
-	right: Clause;
-	operator: string;
-
-	constructor(left: Clause, right: Clause, operator: string) {
-		super()
-		this.left = left
-		this.right = right
-		this.type = 'bool'
-	}
-
-	evaluate(row: Object) {
-		if (this.operator === '<') {
-			if (this.left.type === 'num' && this.right.type === 'num') {
-				return this.left.evaluate(row) < this.right.evaluate(row)
-			} else {
-				return false
-			}
-		} else if (this.operator === '>') {
-			if (this.left.type === 'num' && this.right.type === 'num') {
-				return this.left.evaluate(row) > this.right.evaluate(row)
-			} else {
-				return false
-			}
-		} else if (this.operator === '=') {
-			if (this.left.type === this.right.type) {
-				return this.left.evaluate(row) === this.right.evaluate(row)
-			} else {
-				return false
-			}
-		} else if (this.operator === '!=') {
-			if (this.left.type === this.right.type) {
-				return this.left.evaluate(row) !== this.right.evaluate(row)
-			} else {
-				return false
-			}
-		} else if (this.operator === 'OR') {
-			if (this.left.type === 'bool' && this.right.type === 'bool') {
-				return this.left.evaluate(row) || this.right.evaluate(row)
-			} else {
-				return false
-			}
-		} else if (this.operator === 'AND') {
-			if (this.left.type === 'bool' && this.right.type === 'bool') {
-				return this.left.evaluate(row) && this.right.evaluate(row)
-			} else {
-				return false
-			}
-		} else {
-			return false
-		}
 	}
 }

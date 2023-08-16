@@ -1,14 +1,50 @@
+// Condition should be a Clause from clause.ts
+export function getData(table_name, columns, condition, limit) {
+    // Check table and columns
+    if (!(table_name in database)) {
+        return {
+            'error': 'Could not find table'
+        }
+    }
+
+    // Handle *
+    if (columns.length === 1 && columns[0] === '*') {
+        columns = Object.keys(data_types)
+    } else {
+        // If there were more than one table would need to get column info dynamically
+        for (let i = 0; i < columns.length; i++) {
+            if (!(columns[i] in data_types)) {
+                return {
+                    'error': `Could not find column ${columns[i]}`
+                }
+            }
+        }
+    }
+
+    // Get data
+    let data = []
+    let table = database[table_name]
+    let count = 0
+    for (let i = 0; i < table.length && (limit === -1 || count < limit); i++) {
+        let row = table[i]
+        if (condition.evaluate(row)) {
+            let data_row = {}
+            for (let j = 0; j < columns.length; j++) {
+                data_row[columns[j]] = row[columns[j]]
+            }
+            data.push(data_row)
+            count++
+        }
+    }
+
+    return {
+        'table': data
+    }
+}
+
 // Data taken from 17lands, a MtG data tracker.
 // https://www.17lands.com/card_data?expansion=LTR&format=PremierDraft&start=2019-01-01&end=2023-08-15
 export const data_types = {
-    "a": 'num',
-    "b": 'num',
-    "c": 'num',
-    "d": 'num',
-    "e": 'str',
-    "f": 'str',
-    "g": 'str',
-    "h": 'str',
     "seen_count": 'num',
     "avg_seen": 'num',
     "pick_count": 'num',
@@ -33,7 +69,7 @@ export const data_types = {
     "url_back": 'str',
 }
 
-export const database = [{
+const seventeen_lands = [{
     "seen_count": 277930,
     "avg_seen": 5.220238909077826,
     "pick_count": 36677,
@@ -6297,3 +6333,7 @@ export const database = [{
     "url": "https://cards.scryfall.io/border_crop/front/2/5/25932483-58cd-4ae5-82bf-ab455177d117.jpg?1686970417",
     "url_back": "",
 }]
+
+const database = {
+    'table': seventeen_lands
+}
