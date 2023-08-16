@@ -1,6 +1,6 @@
 <script>
 	import { parseSQL } from '$lib/util.ts';
-	import { Button, Heading, Hr, Input, P, Tooltip } from 'flowbite-svelte';
+	import { Button, Heading, Hr, Input, A, P, Tooltip } from 'flowbite-svelte';
 
 	const COLORS = {
 		'keyword': 'blue',
@@ -22,8 +22,9 @@
 
 <div class="page">
 	<P size="6xl" weight="bold">Database Search</P>
+	
 	<P>This is my implementation of a coding exercise for TextQL.</P>
-	<P>Sample data taken from 17lands, a Magic: the Gathering draft data tracker.</P>
+	<P>Sample data taken from <a class="text-blue" href="https://www.17lands.com/card_data?expansion=LTR&format=PremierDraft&start=2019-01-01&end=2023-08-15">17lands</a>, a Magic: the Gathering draft data tracker.</P>
 
 	<Hr />
 
