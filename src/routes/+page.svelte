@@ -1,7 +1,7 @@
 <script>
 	import { parseSQL } from '$lib/util.ts';
 	import { getData, data_types, data_formats } from '$lib/database.ts';
-	import { Accordion, AccordionItem, Button, Heading, Hr, Input, A, P, Tooltip, Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, TableSearch } from 'flowbite-svelte';
+	import { Accordion, AccordionItem, Button, Heading, Hr, Img, Input, A, P, Popover, Tooltip, Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, TableSearch } from 'flowbite-svelte';
 
 	const COLORS = {
 		'keyword': 'blue',
@@ -9,7 +9,9 @@
 		'num_col': 'green',
 		'error': 'red',
 	};
-	let query = 'SELECT * FROM table LIMIT 100';
+	let query = '';
+	let previous_query = '';
+	$: changed = query !== previous_query;
 	let parsed = {};
 	let headers = [];
 	let table = [];
@@ -21,6 +23,7 @@
 		table = [];
 		tableError = '';
 		parsed = parseSQL(query);
+		previous_query = query;
 	}
 
 	function loadData() {
@@ -40,7 +43,6 @@
 	}
 
 	function getFormatting(t) {
-		console.log(t)
 		return `text-2xl text-${(COLORS[t] ? COLORS[t] : "white")}`;
 	}
 </script>
@@ -66,7 +68,7 @@
 
 	<div class="input-box">
 		<Input bind:value={query} />
-		<Button on:click={parse}>Parse SQL</Button>
+		<Button disabled={!changed} on:click={parse}>Parse SQL</Button>
 	</div>
 
 	<Hr />
@@ -129,16 +131,19 @@
 						{/each}
 					</TableHead>
 					<TableBody class="divde-y">
-						{#each table as r}
+						{#each table as r, i}
 							<TableBodyRow>
 								{#each headers as h}
 									{#if data_formats[h] === 'str' || data_formats[h] === 'int'}
 										<TableBodyCell>
 											{r[h]}
 										</TableBodyCell>
-									{:else if data_formats[h] === 'url'}
+									{:else if data_formats[h] === 'img'}
 										<TableBodyCell>
-											<A class="underline hover:no-underline text-blue" href={r[h]}>Link</A>
+											<A class="underline hover:no-underline text-blue" href={r[h]} id={`row-${i}-col-${h}`}>Link</A>
+											<Popover triggeredBy={`#row-${i}-col-${h}`}>
+												<Img src={r[h]} size="max-h-96"/>
+											</Popover>
 										</TableBodyCell>
 									{:else if data_formats[h] === 'float'}
 										<TableBodyCell>
