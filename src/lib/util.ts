@@ -6,13 +6,8 @@ import { Column, Constant, Operator } from './clause.ts'
 
 // Given a SQL query string, return a JSON object representing the parsed string
 export function parseSQL(query: string) {
-	// Pad symbols to help split everything at once
-	const pad_query = query.replaceAll(
-		/(!=|=|<|>|\(|\)|,)/g,
-		" $1 "
-	)
-	const tokens = ` ${pad_query} `.split(
-		/(\sSELECT\s|\sFROM\s|\sWHERE\s|\sLIMIT\s|\s!=\s|\s=\s|\s<\s|\s>\s|\sAND\s|\sOR\s|\s\(\s|\s\)\s|\s,\s|\s)/g
+	const tokens = ` ${query} `.split(
+		/(".*"|\sSELECT\s|\sFROM\s|\sWHERE\s|\sLIMIT\s|!=|=|<|>|\sAND\s|\sOR\s|\(|\)|,|\s)/g
 	)
 
 	// Parse tokens into types
@@ -265,7 +260,7 @@ export function parseSQL(query: string) {
 
 	// If there are conditions, parse those; otherwise, set conditions to TRUE
 	if (conditions_str !== '') {
-		let conditions = parse_conditions(conditions_str.split(' ').slice(1))
+		let conditions = parse_conditions(conditions_str)
 
 		// Splice condition token types into token types
 		parsed.token_types['where'] = [
@@ -321,15 +316,24 @@ export function parseSQL(query: string) {
 
 
 // Returns token types and conditions clause structure if valid
-function parse_conditions(conditions: string[]) {
-	// Initialize token types to be parse errors, rewritten as parsed
+function parse_conditions(conditions: string) {
+	let tokens = conditions.split(/(".*"|\s)/g).slice(1)
+
+	// Initialize token types to be parse errors
+	// Tokens that get parsed later will be written over
+	let clauses = []
 	let token_types = []
-	for (let i = 0; i < conditions.length; i++) {
-		token_types.push({
-			'str': conditions[i],
-			'type': 'error',
-			'error': 'Cannot parse token'
-		})
+	for (let i = 0; i < tokens.length; i++) {
+		// Get rid of all the whitespace
+		let trimmed = tokens[i].trim()
+		if (trimmed) {
+			token_types.push({
+				'str': trimmed,
+				'type': 'error',
+				'error': 'Cannot parse token'
+			})
+			clauses.push(trimmed)
+		}
 	}
 
 	const parens = ['(',')']
@@ -337,7 +341,6 @@ function parse_conditions(conditions: string[]) {
 	const eq = ['=', '!=']
 	const andor = ['AND', 'OR']
 	const keywords = [...parens, ...comp, ...eq, ...andor]
-	let clauses = [...conditions]
 
 	// First set all of the literal and column clauses
 	for (let i = 0; i < clauses.length; i++) {
@@ -348,8 +351,9 @@ function parse_conditions(conditions: string[]) {
 				clauses[i] = new Constant(s, 'num')
 				token_types[i].type = 'num_constant'
 				token_types[i].error = null
-			} else if (s[0] === s[s.length-1] && (s[0] === '"' || s[0] === "'")) {
-				clauses[i] = new Constant(s, 'str')
+			} else if (s[0] === s[s.length-1] && s[0] === '"') {
+				// Trim the "" from strings
+				clauses[i] = new Constant(s.slice(1, s.length-1), 'str')
 				token_types[i].type = 'str_constant'
 				token_types[i].error = null
 			} else if (s === 'TRUE' || s === 'FALSE') {
