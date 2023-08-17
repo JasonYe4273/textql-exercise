@@ -16,6 +16,7 @@
 	let headers = [];
 	let table = [];
 	let tableError = '';
+	let image = null;
 
 	// When focused on the SQL input box, submit for parsing on enter
 	function submitOnEnter(e) {
@@ -49,6 +50,10 @@
 
 	function getFormatting(t) {
 		return `text-2xl text-${(COLORS[t] ? COLORS[t] : "white")}`;
+	}
+
+	function setImage(url) {
+		image = url
 	}
 </script>
 
@@ -148,10 +153,7 @@
 										</TableBodyCell>
 									{:else if data_formats[h] === 'img'}
 										<TableBodyCell>
-											<A class="underline hover:no-underline text-blue" href={r[h]} id={`row-${i}-col-${h}`}>Link</A>
-											<Popover placement="top" triggeredBy={`#row-${i}-col-${h}`}>
-												<Img src={r[h]} size="max-h-96"/>
-											</Popover>
+											<a class="underline hover:no-underline text-blue" href={r[h]} id={`row-${i}-col-${h}`} on:focus={() => setImage(r[h])} on:blur={() => setImage(null)}>Link</a>
 										</TableBodyCell>
 									{:else if data_formats[h] === 'float'}
 										<TableBodyCell>
@@ -169,6 +171,17 @@
 				</Table>
 			{/if}
 		</div>
+
+		<!-- Sideboard card image display if images is a field -->
+		{#if headers.includes("image")}
+			<div class="card-view" id="card-view">
+				{#if image}
+					<img class="card-image" src={image} alt="Card Image" />
+				{:else}
+					<p class="text-center">[Hover Links for Card Images]</p>
+				{/if}
+			</div>
+		{/if}
 	{/if}
 </div>
 
@@ -218,6 +231,24 @@
 		padding: 25px;
 		width: 70%;
 		gap: 20px;
+	}
+
+	.card-view {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		height: 100%;
+		width: 15%;
+		padding: 5px;
+		margin: 5px;
+	}
+
+	.card-image {
+		width: 100%;
 	}
 </style>
 
