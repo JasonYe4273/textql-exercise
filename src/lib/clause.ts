@@ -53,6 +53,7 @@ export class Operator extends Clause {
 		this.left = left
 		this.right = right
 		this.type = 'bool'
+		this.operator = operator
 	}
 
 	evaluate(row: Object) {
