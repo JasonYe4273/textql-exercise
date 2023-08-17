@@ -9,7 +9,7 @@
 		'num_col': 'green',
 		'error': 'red',
 	};
-	let query = 'SELECT * FROM table;';
+	let query = '';
 	let previous_query = '';
 	$: changed = query !== previous_query;
 	let parsed = {};
@@ -85,14 +85,12 @@
 <div class="page">
 	<P size="6xl" weight="bold">Database Search</P>
 
-	<button on:click={loadData}>hi</button>
-
 	<p>This is my implementation of a coding exercise for TextQL.</p>
 	<p>Sample data taken from <a class="text-blue" href="https://www.17lands.com/card_data?expansion=LTR&format=PremierDraft&start=2019-01-01&end=2023-08-15">17lands</a>, a Magic: the Gathering draft data tracker.</p>
 
 	<Accordion class="m-3 w-2/3">
 		<AccordionItem>
-			<span slot="header">List of columns</span>
+			<span slot="header">List of columns (for ease of reference for testing)</span>
 			<div class="columns-accordion">
 				{#each Object.keys(data_types) as column}
 					<p class={getFormatting(`${data_types[column]}_col`)}>{column}</p>
