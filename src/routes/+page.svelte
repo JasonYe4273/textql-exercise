@@ -18,6 +18,29 @@
 	let tableError = '';
 	let image = null;
 
+
+	let parsedBlock;
+	let scrollToParsed = false;
+	$: {
+		if (scrollToParsed && parsedBlock) {
+			parsedBlock.scrollIntoView({
+				'behavior': 'smooth'
+			})
+			scrollToParsed = false
+		}
+	}
+
+	let tableBlock;
+	let scrollToTable = false;
+	$: {
+		if (scrollToTable && tableBlock) {
+			tableBlock.scrollIntoView({
+				'behavior': 'smooth'
+			})
+			scrollToTable = false
+		}
+	}
+
 	// When focused on the SQL input box, submit for parsing on enter
 	function submitOnEnter(e) {
 		if (e.key === "Enter") parse();
@@ -30,6 +53,7 @@
 		tableError = '';
 		parsed = parseSQL(query);
 		previous_query = query;
+		scrollToParsed = true;
 	}
 
 	function loadData() {
@@ -46,6 +70,7 @@
 			headers = data.columns
 			table = data.table
 		}
+		scrollToTable = true;
 	}
 
 	function getFormatting(t) {
@@ -59,6 +84,8 @@
 
 <div class="page">
 	<P size="6xl" weight="bold">Database Search</P>
+
+	<button on:click={loadData}>hi</button>
 
 	<p>This is my implementation of a coding exercise for TextQL.</p>
 	<p>Sample data taken from <a class="text-blue" href="https://www.17lands.com/card_data?expansion=LTR&format=PremierDraft&start=2019-01-01&end=2023-08-15">17lands</a>, a Magic: the Gathering draft data tracker.</p>
@@ -84,7 +111,7 @@
 	<Hr />
 
 	{#if parsed.token_types}
-		<div class="parsed-block">
+		<div class="parsed-block" bind:this={parsedBlock}>
 			<p class="text-4xl">Parsed SQL</p>
 			<div class="parsed-line">
 				<p>Key:</p>
@@ -130,7 +157,7 @@
 	<Hr />
 
 	{#if tableError || headers.length}
-		<div class="table-block">
+		<div class="table-block" bind:this={tableBlock}>
 			<p class="text-4xl">Data</p>
 			{#if tableError}
 				<p class="text-red">Error: {tableError}</p>
