@@ -19,7 +19,7 @@ export class Column extends Clause {
 	}
 
 	evaluate(row: Object) {
-		return row[col]
+		return row[this.col]
 	}
 }
 
@@ -34,7 +34,7 @@ export class Constant extends Clause {
 
 	evaluate(row: Object) {
 		if (this.type === 'num') {
-			return Number(value)
+			return Number(this.value)
 		} else if (this.type === 'bool') {
 			return this.value === 'TRUE'
 		} else {
