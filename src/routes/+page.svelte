@@ -93,10 +93,10 @@
 			{/if}
 			<Hr />
 			<Button
-				disabled={!parsed.valid}
+				disabled={!parsed.valid || headers.length}
 				on:click={loadData}
 			>
-				{headers.length ? "Refresh Data" : (
+				{headers.length ? "Reload Data (this would make more sense for a real database)" : (
 					parsed.valid ? "Load Data" : "Please fix errors before loading data"
 				)}
 			</Button>
