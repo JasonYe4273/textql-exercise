@@ -140,7 +140,7 @@
 						{#each table as r, i}
 							<TableBodyRow>
 								{#each headers as h}
-									{#if r[h] === undefined}
+									{#if r[h] === undefined || r[h] === null}
 										<TableBodyCell />
 									{:else if data_formats[h] === 'str' || data_formats[h] === 'int'}
 										<TableBodyCell>
