@@ -269,6 +269,11 @@ export function parseSQL(query: string) {
 		]
 
 		parsed.conditions_clause = conditions.clause
+	} else if (where !== -1) {
+		// If there's a WHERE but no conditions, error
+		parsed.valid = false
+		parsed.error = 'Expected conditions but could not find any'
+		return parsed
 	} else {
 		parsed.conditions_clause = new Constant('TRUE', 'bool')
 	}
@@ -306,7 +311,7 @@ export function parseSQL(query: string) {
 	// Only require limit if LIMIT keyword detected
 	if (limit != -1 && parsed.limit === -1) {
 		parsed.valid = false
-		parsed.error = 'Expecting limit but did not find one'
+		parsed.error = 'Expected limit but did not find one'
 		return parsed
 	}
 
