@@ -6,8 +6,8 @@ import { Column, Constant, Operator } from './clause.ts'
 
 // Given a SQL query string, return a JSON object representing the parsed string
 export function parseSQL(query: string) {
-	const tokens = ` ${query} `.split(
-		/(".*"|\sSELECT\s|\sFROM\s|\sWHERE\s|\sLIMIT\s|!=|=|<|>|\sAND\s|\sOR\s|\(|\)|,|\s)/g
+	const tokens = ` ${query}`.split(
+		/(;.*|".*"|\sSELECT\s|\sFROM\s|\sWHERE\s|\sLIMIT\s|!=|=|<|>|\sAND\s|\sOR\s|\(|\)|,|\s)/g
 	)
 
 	// Parse tokens into types
@@ -19,7 +19,8 @@ export function parseSQL(query: string) {
 			'select': [],
 			'from': [],
 			'where': [],
-			'limit': []
+			'limit': [],
+			'end': []
 		},
 		columns: [],
 		table: '',
@@ -34,6 +35,7 @@ export function parseSQL(query: string) {
 	let from = -1
 	let where = -1
 	let limit = -1
+	let end = -1
 
 	// Save conditions string for later parsing
 	let conditions_str = ''
@@ -58,6 +60,24 @@ export function parseSQL(query: string) {
 
 		// Ignore whitespace tokens
 		if (t === '') continue;
+
+		// Statement end
+		if (t[0] === ';') {
+			if (t.length > 1) {
+				parsed.token_types['end'].push({
+					'str': t,
+					'type': 'error',
+					'error': 'Unexpected continuation after statement end'
+				})
+			} else {
+				parsed.token_types['end'].push({
+					'str': t,
+					'type': 'keyword',
+				})
+			}
+			end = i
+			continue;
+		}
 
 		// If looking for column_start, take *
 		if (mode === 'column_start' && t === '*') {
@@ -289,7 +309,7 @@ export function parseSQL(query: string) {
 		}
 	}
 
-	// Check that columns, table, conditions clause, and limit exist.
+	// Check that columns, table, conditions clause, limit, and end exist.
 	if (!parsed.columns.length) {
 		parsed.valid = false
 		parsed.error = 'No columns specified'
@@ -313,6 +333,11 @@ export function parseSQL(query: string) {
 		parsed.valid = false
 		parsed.error = 'Expected limit but did not find one'
 		return parsed
+	}
+
+	if (end == -1) {
+		parsed.valid = false
+		parsed.error = 'Missing ; to end statement'
 	}
 
 	return parsed

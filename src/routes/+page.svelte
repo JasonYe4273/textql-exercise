@@ -9,7 +9,7 @@
 		'num_col': 'green',
 		'error': 'red',
 	};
-	let query = '';
+	let query = 'SELECT * FROM table;';
 	let previous_query = '';
 	$: changed = query !== previous_query;
 	let parsed = {};
