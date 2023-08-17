@@ -1,7 +1,7 @@
 <script>
 	import { parseSQL } from '$lib/util.ts';
-	import { getData, data_formats } from '$lib/database.ts';
-	import { Button, Heading, Hr, Input, A, P, Tooltip, Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, TableSearch } from 'flowbite-svelte';
+	import { getData, data_types, data_formats } from '$lib/database.ts';
+	import { Accordion, AccordionItem, Button, Heading, Hr, Input, A, P, Tooltip, Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, TableSearch } from 'flowbite-svelte';
 
 	const COLORS = {
 		'keyword': 'blue',
@@ -40,6 +40,7 @@
 	}
 
 	function getFormatting(t) {
+		console.log(t)
 		return `text-2xl text-${(COLORS[t] ? COLORS[t] : "white")}`;
 	}
 </script>
@@ -47,8 +48,19 @@
 <div class="page">
 	<P size="6xl" weight="bold">Database Search</P>
 
-	<P>This is my implementation of a coding exercise for TextQL.</P>
-	<P>Sample data taken from <a class="text-blue" href="https://www.17lands.com/card_data?expansion=LTR&format=PremierDraft&start=2019-01-01&end=2023-08-15">17lands</a>, a Magic: the Gathering draft data tracker.</P>
+	<p>This is my implementation of a coding exercise for TextQL.</p>
+	<p>Sample data taken from <a class="text-blue" href="https://www.17lands.com/card_data?expansion=LTR&format=PremierDraft&start=2019-01-01&end=2023-08-15">17lands</a>, a Magic: the Gathering draft data tracker.</p>
+
+	<Accordion class="m-3 w-2/3">
+		<AccordionItem>
+			<span slot="header">List of columns</span>
+			<div class="columns-accordion">
+				{#each Object.keys(data_types) as column}
+					<p class={getFormatting(`${data_types[column]}_col`)}>{column}</p>
+				{/each}
+			</div>
+		</AccordionItem>
+	</Accordion>
 
 	<Hr />
 
@@ -153,6 +165,13 @@
 		flex-direction: column;
 		align-items: center;
 		padding-top: 50px;
+	}
+
+	.columns-accordion {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 20px;
 	}
 
 	.input-box {
