@@ -21,7 +21,7 @@
 	function submitOnEnter(e) {
 		if (e.key === "Enter") parse();
 	}
-	
+
 	function parse() {
 		// Clear table when parsing new query
 		headers = [];
@@ -126,6 +126,7 @@
 
 	{#if tableError || headers.length}
 		<div class="table-block">
+			<p class="text-4xl">Data</p>
 			{#if tableError}
 				<p class="text-red">Error: {tableError}</p>
 			{:else if headers.length}
@@ -139,14 +140,16 @@
 						{#each table as r, i}
 							<TableBodyRow>
 								{#each headers as h}
-									{#if data_formats[h] === 'str' || data_formats[h] === 'int'}
+									{#if !r[h]}
+										<TableBodyCell />
+									{:else if data_formats[h] === 'str' || data_formats[h] === 'int'}
 										<TableBodyCell>
 											{r[h]}
 										</TableBodyCell>
 									{:else if data_formats[h] === 'img'}
 										<TableBodyCell>
 											<A class="underline hover:no-underline text-blue" href={r[h]} id={`row-${i}-col-${h}`}>Link</A>
-											<Popover triggeredBy={`#row-${i}-col-${h}`}>
+											<Popover placement="top" triggeredBy={`#row-${i}-col-${h}`}>
 												<Img src={r[h]} size="max-h-96"/>
 											</Popover>
 										</TableBodyCell>
@@ -214,6 +217,7 @@
 		background-color: grey;
 		padding: 25px;
 		width: 70%;
+		gap: 20px;
 	}
 </style>
 
