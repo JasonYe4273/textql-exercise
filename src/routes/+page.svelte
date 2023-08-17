@@ -1,7 +1,7 @@
 <script>
 	import { parseSQL } from '$lib/util.ts';
-	import { getData } from '$lib/database.ts';
-	import { Button, Heading, Hr, Input, A, P, Tooltip } from 'flowbite-svelte';
+	import { getData, data_formats } from '$lib/database.ts';
+	import { Button, Heading, Hr, Input, A, P, Tooltip, Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell, TableSearch } from 'flowbite-svelte';
 
 	const COLORS = {
 		'keyword': 'blue',
@@ -34,7 +34,7 @@
 		if (data.error) {
 			tableError = data.error
 		} else {
-			headers = parsed.columns
+			headers = data.columns
 			table = data.table
 		}
 	}
@@ -110,7 +110,38 @@
 			{#if tableError}
 				<p class="text-red">Error: {tableError}</p>
 			{:else if headers.length}
-				<p>{JSON.stringify(table)}</p>
+				<Table>
+					<TableHead>
+						{#each headers as h}
+							<TableHeadCell>{h}</TableHeadCell>
+						{/each}
+					</TableHead>
+					<TableBody class="divde-y">
+						{#each table as r}
+							<TableBodyRow>
+								{#each headers as h}
+									{#if data_formats[h] === 'str' || data_formats[h] === 'int'}
+										<TableBodyCell>
+											{r[h]}
+										</TableBodyCell>
+									{:else if data_formats[h] === 'url'}
+										<TableBodyCell>
+											<A class="underline hover:no-underline text-blue" href={r[h]}>Link</A>
+										</TableBodyCell>
+									{:else if data_formats[h] === 'float'}
+										<TableBodyCell>
+											{r[h].toFixed(2)}
+										</TableBodyCell>
+									{:else if data_formats[h] === 'percent'}
+										<TableBodyCell>
+											{`${(r[h]*100).toFixed(2).toString()}%`}
+										</TableBodyCell>
+									{/if}
+								{/each}
+							</TableBodyRow>
+						{/each}
+					</TableBody>
+				</Table>
 			{/if}
 		</div>
 	{/if}
