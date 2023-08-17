@@ -178,7 +178,7 @@
 										</TableBodyCell>
 									{:else if data_formats[h] === 'img'}
 										<TableBodyCell>
-											<a class="underline hover:no-underline text-blue" href={r[h]} id={`row-${i}-col-${h}`} on:focus={() => setImage(r[h])} on:blur={() => setImage(null)}>Link</a>
+											<a class="underline hover:no-underline text-blue" href={r[h]} id={`row-${i}-col-${h}`} on:mouseover={() => setImage(r[h])} on:mouseout={() => setImage(null)}>Link</a>
 										</TableBodyCell>
 									{:else if data_formats[h] === 'float'}
 										<TableBodyCell>
@@ -197,7 +197,7 @@
 			{/if}
 		</div>
 
-		<!-- Sideboard card image display if images is a field -->
+		<!-- Sidebar card image display if images is a field -->
 		{#if headers.includes("image")}
 			<div class="card-view" id="card-view">
 				{#if image}
