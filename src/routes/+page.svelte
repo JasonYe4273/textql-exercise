@@ -17,6 +17,11 @@
 	let table = [];
 	let tableError = '';
 
+	// When focused on the SQL input box, submit for parsing on enter
+	function submitOnEnter(e) {
+		if (e.key === "Enter") parse();
+	}
+	
 	function parse() {
 		// Clear table when parsing new query
 		headers = [];
@@ -67,7 +72,7 @@
 	<Hr />
 
 	<div class="input-box">
-		<Input bind:value={query} />
+		<Input bind:value={query} on:keypress={submitOnEnter} />
 		<Button disabled={!changed} on:click={parse}>Parse SQL</Button>
 	</div>
 
